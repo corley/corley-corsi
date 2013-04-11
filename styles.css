@@ -276,16 +276,17 @@ p a,p a:link,p a:hover,p a:visited {
     padding-bottom:0px;
 }
 #fixed {
-	background:transparent url(fixed_bg.png);
+	background: #4bb7ff url(fixed_bg.png);
 	height:40px;
 	line-height:40px;
 	postition:fixed;
 	color:#fff;
-	text-align:center;
 	position:fixed;
+	text-align:center;
 	z-index:1000;
 	border-bottom:1px solid #777;
 }
+
 #fixed img {
 	vertical-align:middle;
 }
@@ -483,6 +484,20 @@ img.sponsor {
 	background:transparent url(ico_expert2.png) center left no-repeat;
 }
 
+.block  .ico_expert_min {
+	background:transparent url(ico_expert_min.png) center left no-repeat;
+	text-align:left;
+	padding:10px 0;
+	min-height:68px;
+}
+.block .ico_expert2_min {
+	background:transparent url(ico_expert2_min.png) center left no-repeat;
+}
+.block .ico_expert3_min {
+	background:transparent url(ico_expert3_min.png) center left no-repeat;
+}
+.block .buy .title h3 {font-size:17px;text-align:left;}
+
 
 .sponsormedia a {
 	display:inline-block;
@@ -492,6 +507,20 @@ img.sponsor {
 	height:80px;
 }
 
+a.contattaci {
+	font-size:17px;
+	letter-spacing:1px;
+	background:#eaeaea;
+	padding:4px;
+	border:0;
+	text-decoration:none;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+a.contattaci:hover {
+	color:#336699;
+}
 
 .break {
 	height:240px;
