@@ -256,7 +256,7 @@ body {
 }
 
 #liv0 {
-	background: transparent url(light-blue.jpg) top center no-repeat;
+	background: transparent url(pixels.jpg) top center no-repeat;
 }
 .inside {  
     width:100%;
@@ -276,7 +276,7 @@ p a,p a:link,p a:hover,p a:visited {
     padding-bottom:0px;
 }
 #fixed {
-	background: #4bb7ff url(fixed_bg.png);
+	background: #4bb7ff url(pixels.jpg) top  center;
 	height:40px;
 	line-height:40px;
 	postition:fixed;
@@ -284,7 +284,6 @@ p a,p a:link,p a:hover,p a:visited {
 	position:fixed;
 	text-align:center;
 	z-index:1000;
-	border-bottom:1px solid #777;
 }
 
 #fixed img {
