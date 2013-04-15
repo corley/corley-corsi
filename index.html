@@ -69,8 +69,16 @@ window.addEvent('domready', function() {
 		
 			
 	}
-	switch (window.location.search) {
+	var location = window.location.search.split("&");
+	if(location[0]) location = location[0];
+	else location = "";
+	switch (location) {
 	
+		case "?php" :
+			modal.title = "Sei uno sviluppatore PHP?";
+			modal.contents = "Il Corso di Cloud Computing ti aiuterà a creare applicativi PHP scalabili, essendo focalizato sulla gestione di <strong>Apache e MySQL</strong>.<br/><br/>Ti aiuterà a incrementare il tuo bagaglio tecnico permettendoti di progettare e sviluppare <strong>siti e applicativi in Cloud con il PHP</strong>. Non perdere l'occasione!";
+			modal.go = true;
+		break;
 		default:
 			modal.go = false;
 		break;
@@ -161,7 +169,7 @@ window.addEvent('domready', function() {
 				    	<li>Posti limitati e approccio 1-to-1</li>
 				    	<li>Sala perfettamente attrezzata nel Toolbox Torino</li>
 				    	<li>Prezzo concorrenziale</li>
-				    	<li>Attesatato di partecipazione</li>
+				    	<li>Attestato di partecipazione</li>
 					</ul>
 				</div>
 			</div>
@@ -491,14 +499,21 @@ window.addEvent('domready', function() {
 					<p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Torino, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
 					<p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
 					<p><img src='sponsor_corley.png' border='' /></p>
+					<div class='lineare'>
+						<p><strong>I docenti</strong></p>
+						<p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
+						<p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
+						<a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
 					</div>
+					<div class='lineare'>
+					<img src='/cards.jpg' border='' />
+					</div>
+				</div>
 					
 				<div class='duequinti destra testo_sin'>
-					<p><strong>I docenti</strong></p>
-					<p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
-					<p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
+					<div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>011 4365278</b>!</p></div>
 					<div class='lineare'>
-						<a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci'>Contattaci per informazioni sul Corso</a>
+						<iframe src="https://docs.google.com/a/corley.it/spreadsheet/embeddedform?formkey=dDFVRkd3NTgyaUl5dGlOdGU1cXMxWnc6MQ" width="500" height="1003" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
 					</div>
 				</div>
 			</div>
@@ -508,8 +523,8 @@ window.addEvent('domready', function() {
 		
 </div>
 	
-	<div class='staytuned lineare_no'>ti aspettiamo!</div>
-	<div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 1066990005 - 2-3 Maggio 2013, Torino - <span id='gotop' class='puntatore'>torna in cima</span></div>
+	<div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
+	<div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 2-3 Maggio 2013, Torino - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 <script type="text/javascript">
