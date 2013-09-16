@@ -40,7 +40,7 @@
 	function initialize_map() {
 				var mapOptions = {
 		          zoom: 15,
-		          center: new google.maps.LatLng(45.468754, 9.17685),
+		          center: new google.maps.LatLng(45.4907412, 9.1875897),
 		          mapTypeId: google.maps.MapTypeId.ROADMAP,
 		          scrollwheel: false
 		        }
@@ -82,7 +82,7 @@ window.addEvent('domready', function() {
 		default:
 			modal.title = "I biglietti scontati sono disponibili!";
 			modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: un modulo a soli <strong>199,00</strong> &euro; (invece che 299,00), il corso completo a soli <strong>349,00</strong> &euro; (invece che 499,00)!";
-			modal.go = true;
+			modal.go = false;
 		break;
 	}
 	
@@ -191,6 +191,21 @@ window.addEvent('domready', function() {
 			</div>
 			<div class='lineare_no'>
 				<p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso sul Cloud Computing!</p>
+			</div> 
+			<div class='lineare_no'>
+				<div class='box_3' style='width:100%'>
+					<div class='title'>
+						<h3 class='testo_sin'><span class='grassetto'>Opinioni e Feedback sul corso</span></h3>
+					</div>
+					<div class='lineare_no' >
+				    	<p style='margin:0'><b>Dall'edizione di Maggio 2013, a Torino</b>:</p>
+				    	<p>- <i>"Una panoramica completa e chiara su Cloud e AWS, con alternanza di teoria e sessioni pratiche guidate. Docenti veramente preparati e disponibili e materiale di qualità: molto utile!"</i>, Davide C.</p>
+				    	<p>- <i>"Per chi avesse voglia di scoprire il mondo di servizi fornito da  AWS, consiglio fortemente questo corso. Una particolare nota di merito và ai relatori. Molto formati e disponibili."</i>, Giorgio C.</p>
+				    	<p>- <i>"Corso davvero utile e professionale, spiegato molto bene. Un vero viaggio nel Cloud grazie a Corley."</i>, Andrea C.</p>
+				    	<p>- <i>"Complimenti per il corso e grazie per la disponibilità nel dare spiegazioni e delucidazioni. Scaletta completa e ambiente perfetto per un corso di formazione."</i>, Marco T.</p>
+				    	
+					</div>
+				</div>
 			</div>
 		</div>
 		
@@ -404,7 +419,7 @@ window.addEvent('domready', function() {
 		<div id='block3' class='block'> 
 			<a name='biglietti' class='ancor'></a> 
 			<div class='lineare_no testo_cen' >
-				<h3>I posti sono limitati! Solo entro il 20 maggio puoi accedere al biglietto scontato del 30%!</h3>
+				<h3>I posti sono limitati! Solo entro il 24 maggio puoi accedere al biglietto scontato del 30%!</h3>
 				
 					
 				<div class='lineare_25 buy'>
