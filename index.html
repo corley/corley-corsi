@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="description" content="Corsi di Formazione AWS Amazon Web Services, a Milano il 4-5 Giugno 2013" />
+<meta name="description" content="Corsi di Formazione AWS Amazon Web Services, a Milano il 17-18 ottobre 2013" />
 <meta name="keyword" content="" />
 <meta name="Copyright" content="Corley" />
 <meta name="Language" content="Italian" />
@@ -37,512 +37,497 @@
 
 
 
-	function initialize_map() {
-				var mapOptions = {
-		          zoom: 15,
-		          center: new google.maps.LatLng(45.4907412, 9.1875897),
-		          mapTypeId: google.maps.MapTypeId.ROADMAP,
-		          scrollwheel: false
-		        }
-		        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-	
-		        var hotel = new google.maps.Marker({
-		            position: new google.maps.LatLng(45.468754, 9.17685),
-		            map: map,
-		            icon: 'marker.png',
-					title:"Corso Cloud Computing"
-		        });
-	      }
+    function initialize_map() {
+                var mapOptions = {
+                  zoom: 15,
+                  center: new google.maps.LatLng(45.468754, 9.17685),
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  scrollwheel: false
+                }
+                var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    
+                var hotel = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.468754, 9.17685),
+                    map: map,
+                    icon: 'marker.png',
+                    title:"Corso Cloud Computing"
+                });
+          }
     </script>
 
 <script type='text/javascript'>  
 window.addEvent('domready', function() {  
-	
-	$$('.program2').fade(0.6);
-	
-	initialize_map();
+    
+    $$('.program2').fade(0.6);
+    
+    initialize_map();
 
-	var modal = {
-		title: "",
-		contents: "",
-		go: false
-		
-			
-	}
-	var location = window.location.search.split("&");
-	if(location[0]) location = location[0];
-	else location = "";
-	switch (location) {
-	
-		case "?php" :
-			modal.title = "Sei uno sviluppatore PHP?";
-			modal.contents = "Il Corso di Cloud Computing ti aiuterà a creare applicativi PHP scalabili, essendo focalizato sulla gestione di <strong>Apache e MySQL</strong>.<br/><br/>Ti aiuterà a incrementare il tuo bagaglio tecnico permettendoti di progettare e sviluppare <strong>siti e applicativi in Cloud con il PHP</strong>. Non perdere l'occasione!";
-			modal.go = true;
-		break;
-		default:
-			modal.title = "I biglietti scontati sono disponibili!";
-			modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: un modulo a soli <strong>199,00</strong> &euro; (invece che 299,00), il corso completo a soli <strong>349,00</strong> &euro; (invece che 499,00)!";
-			modal.go = false;
-		break;
-	}
-	
-	if(modal.go) {
-		SM = new SimpleModal({width:600, btn_ok: "Ottima notizia! (chiudi la finestra)"});             
-    	SM.show(modal);
-	}
-		
-	  
-	var links = $$('.link');
-	links.each(function(link, ii) {
-		link.addEvent('click', function(evento) {
-			evento.preventDefault();
-			var iii = ii+1;
-			new Fx.Scroll(window).toElement('block'+iii);
-		});
-	});
-	
-	$('gotop').addEvent('click', function() {
-		new Fx.Scroll(window).toTop();
-	});
-	
-	
-		
-	var update_pos = function(fxc, el){
-		var scroll = window.getScroll();
-		fxc.start({
-			'top': [el.getStyle('top'), scroll.y+250]
-		});
-	}
-		
+    var modal = {
+        title: "",
+        contents: "",
+        go: false
+        
+            
+    }
+    var location = window.location.search.split("&");
+    if(location[0]) location = location[0];
+    else location = "";
+    switch (location) {
+    
+        case "?php" :
+            modal.title = "Sei uno sviluppatore PHP?";
+            modal.contents = "Il Corso di Cloud Computing ti aiuterà a creare applicativi PHP scalabili, essendo focalizato sulla gestione di <strong>Apache e MySQL</strong>.<br/><br/>Ti aiuterà a incrementare il tuo bagaglio tecnico permettendoti di progettare e sviluppare <strong>siti e applicativi in Cloud con il PHP</strong>. Non perdere l'occasione!";
+            modal.go = true;
+        break;
+        default:
+            modal.title = "I biglietti scontati sono disponibili!";
+            modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: un modulo a soli <strong>199,00</strong> &euro; (invece che 299,00), il corso completo a soli <strong>349,00</strong> &euro; (invece che 499,00)!";
+            modal.go = true;
+        break;
+    }
+    
+    if(modal.go) {
+        SM = new SimpleModal({width:600, btn_ok: "Ottima notizia! (chiudi la finestra)"});             
+        SM.show(modal);
+    }
+        
+      
+    var links = $$('.link');
+    links.each(function(link, ii) {
+        link.addEvent('click', function(evento) {
+            evento.preventDefault();
+            var iii = ii+1;
+            new Fx.Scroll(window).toElement('block'+iii);
+        });
+    });
+    
+    $('gotop').addEvent('click', function() {
+        new Fx.Scroll(window).toTop();
+    });
+    
+    
+        
+    var update_pos = function(fxc, el){
+        var scroll = window.getScroll();
+        fxc.start({
+            'top': [el.getStyle('top'), scroll.y+250]
+        });
+    }
+        
 
 });
 </script>
 
-		
+        
 </head>
 <body> 
 <div class='lineare_no' id='liv0'>
     <div id='fixed' class='lineare_no'>
-    	<a href='#conferenza' class='link' >Il Corso</a>
-    	<a href='#programma' class='link'>Programma</a>
-    	<a href='#biglietti' class='link'>Prenota il tuo posto</a>
-    	<a href='#location' class='link'>Location</a>
-    	<a href='#chisiamo' class='link'>Chi Siamo &amp; contatti</a>
-    	<!-- <a href='https://twitter.com/_CloudConf_' target='_blank'><img src='twitter.png' border='0' /></a>
-    	<a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>-->
+        <a href='#conferenza' class='link' >Il Corso</a>
+        <a href='#programma' class='link'>Programma</a>
+        <a href='#biglietti' class='link'>Prenota il tuo posto</a>
+        <a href='#location' class='link'>Location</a>
+        <a href='#chisiamo' class='link'>Chi Siamo &amp; contatti</a>
+        <!-- <a href='https://twitter.com/_CloudConf_' target='_blank'><img src='twitter.png' border='0' /></a>
+        <a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>-->
     </div>
-	
-	
-	<div class='inside' id='liv1'>
-		<div class='lineare_no' id='header'>
-			<h2>4-5 Giugno 2013, a <strong>Milano</strong></h2>
-			<h1>Cloud Computing per Applicazioni Web</h1>
-			<h3>Corso di Formazione Professionale su Scalabilità, Cloud Development e prodotti AWS.</h3>
-		</div>
-		
-		
-		<div id='block1' class='block'> 
-			<a name='conferenza' class='ancor'></a>    
-			<div class='lineare_no'>
-				<div class='box_3'>
-					<div class='title'>
-						<h3 class='testo_sin'><span class='grassetto'>Il corso</span></h3>
-					</div>
-					<div class='lineare_no' >
-				    	<p>Due moduli da <strong>8 ore</strong> (acquistabili separatamente) che costituiscono un percorso di formazione completo sul Cloud Computing e AWS.</p>
-				    	<p>Il corso, ricco di <strong>laboratori pratici</strong> e nato ad un attento studio del programma, è dedicato a sviluppatori, IT managers e startupper.</p>
-					</div>
-				</div>
-				<div class='box_3'>
-					<div class='title'>
-						<h3 class='testo_sin'><span class='grassetto'>Perchè noi</span></h3>
-					</div>
-					<div class='lineare_no' >
-				    	<p>Siamo <strong>sviluppatori senior</strong> specializzati nella progettazione e deploy di applicativi scalabili con i prodotti Amazon Web Services.<p>
-				    	<p>Siamo promotori e ideatori della <a href='http://www.cloudconf.it' class='grassetto'>Cloud Conference</a>, il primo grande evento italiano dedicato alla scalabilità e cloud development che si è svolto lo scorso 18 Aprile a Torino.</p>
-					</div>
-				</div>
-				<div class='box_3 box_last'>
-					<div class='title'>
-						<h3 class='testo_sin'><span class='grassetto'>I punti di forza</span></h3>
-					</div>
-					<ul>
-				    	<li>Corso full-immersion ricco di laboratori</li>
-				    	<li>Posti limitati e approccio 1-to-1</li>
-				    	<li>Sala perfettamente attrezzata in centro a Milano</li>
-				    	<li>Prezzo concorrenziale</li>
-				    	<li>Attestato di partecipazione</li>
-					</ul>
-				</div>
-			</div>
-			<div class='lineare'>
-				<div class="addthis_wrapper lineare_no">
-	                      <!-- AddThis Button BEGIN -->
-	<div class="addthis_toolbox addthis_default_style lineare_no">
-	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-	<a class="addthis_button_tweet" style='margin-left:20px;'></a>
-	<a class="addthis_button_pinterest_pinit"></a>
-	</div>
-	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511288d075bcec8a"></script>
-	<!-- AddThis Button END -->
-	                        <!-- AddThis Button END -->
-				</div>
-			</div>
-			<div class='lineare_no'>
-				<p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso sul Cloud Computing!</p>
-			</div> 
-			<div class='lineare_no'>
-				<div class='box_3' style='width:100%'>
-					<div class='title'>
-						<h3 class='testo_sin'><span class='grassetto'>Opinioni e Feedback sul corso</span></h3>
-					</div>
-					<div class='lineare_no' >
-				    	<p style='margin:0'><b>Dall'edizione di Maggio 2013, a Torino</b>:</p>
-				    	<p>- <i>"Una panoramica completa e chiara su Cloud e AWS, con alternanza di teoria e sessioni pratiche guidate. Docenti veramente preparati e disponibili e materiale di qualità: molto utile!"</i>, Davide C.</p>
-				    	<p>- <i>"Per chi avesse voglia di scoprire il mondo di servizi fornito da  AWS, consiglio fortemente questo corso. Una particolare nota di merito và ai relatori. Molto formati e disponibili."</i>, Giorgio C.</p>
-				    	<p>- <i>"Corso davvero utile e professionale, spiegato molto bene. Un vero viaggio nel Cloud grazie a Corley."</i>, Andrea C.</p>
-				    	<p>- <i>"Complimenti per il corso e grazie per la disponibilità nel dare spiegazioni e delucidazioni. Scaletta completa e ambiente perfetto per un corso di formazione."</i>, Marco T.</p>
-				    	
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div id='block2' class='block'> 
-			<a name='programma' class='ancor'></a> 
-			
-			<div class='lineare_25'>
-			
-				<div class='meta'>
-					<div class='title ico_expert'>    
-						<div class='trequarti destra'>
-							<h3 style='text-align:left'><span class='grassetto'>Modulo 1: Corso di Cloud Computing</span></h3>
-							<h3 style='text-align:left'>8 ore - martedì 4 giugno 2013</h3>
-						</div>
-					</div>
-					<div class='lineare'>
-					<p class='testo17'>L'obiettivo del corso è la comprensione delle metodologie principali per la progettazione di applicativi scalabili, partendo con una analisi dei prodotti Amazon Web Services, proseguendo attraverso laboratori pratici dedicati all'utilizzo di istanze virtuali, deploy di web app sul cloud e scalabilità dei database.</p>
-					<p><strong>A chi è rivolto</strong>: sviluppatori, solution architect e responsabili IT che desiderano iniziare a lavorare con il Cloud Computing ed acquisire un'ottima conoscenza del Cloud Computing</p>
-					<p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di un linguaggio di programmazione o scripting (quale PHP, Javascript o JAVA)</p>
-					<p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, pranzo, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
-					<p><strong>Costo</strong>: 299,00 &euro; iva esclusa, ma soli 199,00 &euro; i.e. prenotando in anticipo</p>
-					<p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
-					</div>
-				</div>
-				
-				<div class='meta destra'>
-					<div class='programs lineare_no'>
-						<div class='program  program2'>
-							<div class='quinto'>09:00</div>
-							<div class='trequarti'>
-								<h3>Registrazione partecipanti &amp; presentazione</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>09:30</div>
-							<div class='trequarti'>
-								<h3>Comprendere ed usare i prodotti Amazon Web Services</h3> 
-								<p>Presentazione dei servizi (IAM, EC2, S3, RDS, Elasticache...) ed esempi d'uso</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>10:30</div>
-							<div class='trequarti'>
-								<h3>Coffee break</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>10:45</div>
-							<div class='trequarti'>
-								<h3>Teoria della scalabilità e S.O.A (Service Oriented Architecture)</h3> 
-								<p>Come progettare applicativi scalabili + esercizi pratici</p>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>11:45</div>
-							<div class='trequarti'>
-								<h3>Laboratorio pratico sulla Console Web Amazon</h3> 
-								<p>Percorso interattivo per imparare a gestire utenti, istanze e servizi AWS</p>
-							</div>
-						</div>						
-						<div class='program  program2'>
-							<div class='quinto'>13:00</div>
-							<div class='trequarti'>
-								<h3>Pausa Pranzo</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>14:00</div>
-							<div class='trequarti'>
-								<h3>Gestione dei file statici (html, js, css, img...) con S3 e CDN</h3> 
-								<p>Laboratorio sulla integrazione di S3 e CloudFront con siti web</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>15:30</div>
-							<div class='trequarti'>
-								<h3>Coffee break</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>15:45</div>
-							<div class='trequarti'>
-								<h3>RDS e servizi per la scalabilità dei database SQL</h3> 
-								<p>Funzionalità per la gestione dei database relazionali e confronto con NoSQL</p>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>16:45</div>
-							<div class='trequarti'>
-								<h3>Servizi complementari e calcolo dei costi</h3> 
-								<p>Laboratorio sui servizi SQS, CloudWatch, SES e guida alla creazione dei preventivi</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>17:45</div>
-							<div class='trequarti'>
-								<h3>Chiusura corso</h3>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-			<div class='lineare_75'>
-			
-				<div class='meta'>
-					<div class='title ico_expert ico_expert2'>    
-						<div class='trequarti destra'>
-							<h3 style='text-align:left'><span class='grassetto' style='letter-spacing:-1px'>Modulo 2: Corso di Scalabilità avanzata</span></h3>
-							<h3 style='text-align:left'>8 ore - mercoledì 5 giugno 2013</h3>
-						</div>
-					</div>
-					<div class='lineare'>
-					<p class='testo17'>Questo modulo più avanzato analizza nel dettaglio i metodi e le tecnologie per la progettazione e deploy di applicativi scalabili e in alta disponibilità, con una particolare attenzione alla scalabilità dei database, tecniche di autoscaling automatizzate e gestione dell'architettura dell'applicativo.</p>
-					<p><strong>A chi è rivolto</strong>: sviluppatori, solution architect e responsabili IT che vogliono acquisire una conoscenza avanzata delle metodologie di autoscaling e delle tecnologie AWS</p>
-					<p><strong>Competenze richieste</strong>: conoscenza dei prodotti AWS e teorie di base di scalabilità</p>
-					<p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, pranzo, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
-					<p><strong>Costo</strong>: 299,00 &euro; iva esclusa, ma soli 199,00 &euro; i.e. prenotando in anticipo</p>
-					<p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
-					</div>
-				</div>
-				
-				<div class='meta destra'>
-					<div class='programs lineare_no'>
-						<div class='program  program2'>
-							<div class='quinto'>09:00</div>
-							<div class='trequarti'>
-								<h3>Registrazione partecipanti &amp; presentazione</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>09:30</div>
-							<div class='trequarti'>
-								<h3>Teoria di scalabilità avanzata</h3> 
-								<p>Come progettare applicativi in alta disponibilità</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>10:30</div>
-							<div class='trequarti'>
-								<h3>Coffee break</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>10:45</div>
-							<div class='trequarti'>
-								<h3>Metriche e Allarmi: CloudWatch + Simple Notification Service</h3> 
-								<p>Analizziamo i consumi e controlliamo lo stato del nostro applicativo</p>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>12:00</div>
-							<div class='trequarti'>
-								<h3>Elastic IP &amp; Elastic Load Balancer</h3> 
-								<p>Esempi e metodologie per la gestione del traffico e delle risorse</p>
-							</div>
-						</div>						
-						<div class='program  program2'>
-							<div class='quinto'>13:00</div>
-							<div class='trequarti'>
-								<h3>Pausa Pranzo</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>14:00</div>
-							<div class='trequarti'>
-								<h3>Istanze virtuali e AMI personalizzate</h3> 
-								<p>Laboratorio sulla gestione delle proprie Immagini Macchina personalizzate</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>15:30</div>
-							<div class='trequarti'>
-								<h3>Coffee break</h3>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>15:45</div>
-							<div class='trequarti'>
-								<h3>Autoscaling avanzato</h3> 
-								<p>Laboratorio sulle tecniche di scalata avanzata e alta disponibilità</p>
-							</div>
-						</div>
-						<div class='program'>
-							<div class='quinto'>17:00</div>
-							<div class='trequarti'>
-								<h3>Deploy di applicativi sulla nuvola</h3> 
-								<p>Metodologie di deploy e gestione dell'applicativo su AWS</p>
-							</div>
-						</div>
-						<div class='program  program2'>
-							<div class='quinto'>17:45</div>
-							<div class='trequarti'>
-								<h3>Chiusura corso</h3>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-		</div>
-		
-		
-		<div  class='block'> 
-			<h3><span class='grassetto'></span></h3>
-			<div class='lineare testo_cen'><img src='clouds.png' alt='' /></div>
-			<div class='lineare testo_cen'><p class='testo_cen testo17'>Il nostro Corso è un percorso formativo completo e professionale, studiato per formare i partecipanti attraverso sessioni approfondite e laboratori pratici. </p><p class='testo17'>Rappresenta un'occasione imperdibile per sviluppatori e aziende che desiderano aggiornare il proprio bagaglio di competenze e ottenere nuovi sbocchi lavorativi.</p></div>
-		</div>
-		
-		
-			
-		<div id='block3' class='block'> 
-			<a name='biglietti' class='ancor'></a> 
-			<div class='lineare_no testo_cen' >
-				<h3>I posti sono limitati! Solo entro il 24 maggio puoi accedere al biglietto scontato del 30%!</h3>
-				
-					
-				<div class='lineare_25 buy'>
-				
-					<div class='terzo'>
-						<div class='title ico_expert_min'>    
-							<div class='trequarti destra'>
-								<h3><span class='grassetto'>1: Corso di Cloud Computing</span></h3>
-								<h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
-								<h3>prenotando ora solo 199,00 &euro; i.e.</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class='terzo margin_left_5'>
-						<div class='title ico_expert_min ico_expert2_min'>    
-							<div class='trequarti destra'>
-								<h3><span class='grassetto'>2: Corso di Scalabilità Avanzata</span></h3>
-								<h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
-								<h3>prenotando ora solo 199,00 &euro; i.e.</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class='terzo margin_left_5'>
-						<div class='title ico_expert_min ico_expert3_min'>    
-							<div class='trequarti destra'>
-								<h3><span class='grassetto'>Corso 1 + Corso 2</span></h3>
-								<h3 style='font-size:15px;'>prezzo intero 499,00 &euro; i.e.</h3>
-								<h3>prenotando ora solo 349,00 &euro; i.e.</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class='lineare' >
-				<div style="width:100%; text-align:left;" ><div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=6618739829&ref=etckt&v=2" frameborder="0" height="477" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Emissione biglietti online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/event/6618739829?ref=etckt">Corso di Cloud Computing per Applicazioni Web</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div></div>
-				<div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
-			</div>
-		</div>
-		
-		
-		<div id='block4' class='block'> 
-			<a name='location' class='ancor'></a> 
-			<div class='title'>    
-				<h3><span class='grassetto'>La Location</span></h3>
-			</div>
-		     <p class="testo_cen">I Corsi si tengono nella sede della <strong>Adiuva Formazione</strong>, in spazi dedicati a corsi formativi, in prossimità della metro e stazione ferroviaria di <i>Cadorna</i>, in una posizione strategica e facilmente raggiungibile.</p>
-		     <p class="testo_cen"><strong><a href='http://www.adiuvaformazione.it/' target='_blank'>ADIUVA Formazione</a></strong><br/>Piazzale Cadorna, 10 - 20123 Milano </p>
-			<div class='lineare_20' id='map_canvas_over'>
-				<div class='lineare_no' id='map_canvas'></div>
-			</div>
-			<div class='lineare_20'>
-				<div class='quinto'>
-					<p><strong>In Città (auto e mezzi pubblici)</strong></p>
-					<p>La sede è comodamente raggiungibile in <strong>metropolitana</strong> linea 1 (rossa) e linea 2 (verde) fermata Cadorna (a pochi metri dalla sede). Tram: 1, 16, 19, 27 - pulman: 61, 94, 54 </p>
-					<p>In auto seguire le indicazioni per Parco Sempione ed il Castello Sforzesco.</p>
-				</div>
-				<div class='quinto' style='margin-left:8%;'>
-					<p><strong>In Treno</strong></p>
-					 <p>
-		                La sede dei corsi è a pochi metri dalla stazione FS Cadorna. Per chi arriva con l'<strong>alta velocità</strong> (<a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a>) scendere a Milano Centrale o Porta Garibaldi e prendere la metropolitana linea 2 (verde) in direzione Assago fino alla stazione Cadorna.
-		            </p>
-				</div>
-				<div class='quinto' style='margin-left:8%;'>
-					<p><strong>In Aereo</strong></p>
-					 <p>
-		                Dagli aeroporti di <strong>Malpensa, Linate e Bergamo</strong> raggiungere con i collegamenti bus Milano Centrale e prendere la metropolitana linea 2 (verde) direzione Assago fino a fermata Cadorna.
-		            </p>
-				</div>
-				<div class='quinto destra' >
-					<p><strong>Pernottamento</strong></p>
-					<p>
-			            Sono disponibili diverse soluzioni in loco adatte ad ogni budget: <a href="http://www.booking.com/searchresults.it.html?sid=00387096f9663a0a8f65848c300ccf41;dcid=1;ac_pageview_id=17344cb53f060165;checkin_monthday=4;checkin_year_month=2013-6;checkout_monthday=5;checkout_year_month=2013-6;class_interval=1;csflt=%7B%7D;dest_id=-121726;dest_type=city;inac=0;interval_of_time=undef;redirected_from_city=0;redirected_from_landmark=0;review_score_group=empty;rfh=0;score_min=0;src=index;ss_all=0;ssb=empty;radius=0;city=-121726;;nflt=district%3D2284%3B;track_ajax_filters=1" target="_blank">Alberghi in zona</a>
-			        </p>
-				</div>
-			</div>
-			<div class='lineare_no'>
-				<div class='box_3'><img src='/piazzale-cadorna.jpg' /></div>
-				<div class='box_3'><img src='http://www.adiuvaformazione.it/foto/prod_350-328_big.jpg' /></div>
-				<div class='box_3 box_last'><img src='http://adiuvaformazione.it/foto/prod_350-315_zom.JPG'  /></div>
-			</div>
-		</div>
-		
-		
-		<div id='block5' class='block'> 
-			<a name='chisiamo' class='ancor'></a> 
-			<div class='title'>    
-				<h3><span class='grassetto'>Chi Siamo</span></h3>
-			</div>
-			<div class='lineare_no testo_cen' >
-			
-				<div class='duequinti sinistra testo_sin'>
-					<p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
-					<p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Torino, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
-					<p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
-					<p><img src='sponsor_corley.png' border='' /></p>
-					<div class='lineare'>
-						<p><strong>I docenti</strong></p>
-						<p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
-						<p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
-						<a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
-					</div>
-					<div class='lineare'>
-					<img src='/cards.jpg' border='' />
-					</div>
-				</div>
-					
-				<div class='duequinti destra testo_sin'>
-					<div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>392 3081714</b>!</p></div>
-					<div class='lineare'>
-						<iframe src="https://docs.google.com/a/corley.it/spreadsheet/embeddedform?formkey=dDFVRkd3NTgyaUl5dGlOdGU1cXMxWnc6MQ" width="500" height="1003" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
+    
+    
+    <div class='inside' id='liv1'>
+        <div class='lineare_no' id='header'>
+            <h2>17-18 Ottobre 2013, a <strong>Milano</strong></h2>
+            <h1>Cloud Computing per Applicazioni Web</h1>
+            <h3>Corso di Formazione Professionale su Scalabilità, Cloud Development e prodotti AWS.</h3>
+        </div>
+        
+        
+        <div id='block1' class='block'> 
+            <a name='conferenza' class='ancor'></a>    
+            <div class='lineare_no'>
+                <div class='box_3'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>Il corso</span></h3>
+                    </div>
+                    <div class='lineare_no' >
+                        <p>Due moduli da <strong>8 ore</strong> (acquistabili separatamente) che costituiscono un percorso di formazione completo sul Cloud Computing e AWS.</p>
+                        <p>Il corso, ricco di <strong>laboratori pratici</strong> e nato ad un attento studio del programma, è dedicato a sviluppatori, IT managers e startupper.</p>
+                    </div>
+                </div>
+                <div class='box_3'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>Perchè noi</span></h3>
+                    </div>
+                    <div class='lineare_no' >
+                        <p>Siamo <strong>sviluppatori senior</strong> specializzati nella progettazione e deploy di applicativi scalabili con i prodotti Amazon Web Services.<p>
+                        <p>Siamo promotori e ideatori della <a href='http://www.cloudconf.it' class='grassetto'>Cloud Conference</a>, il primo grande evento italiano dedicato alla scalabilità e cloud development che si è svolto lo scorso 18 Aprile a Torino.</p>
+                    </div>
+                </div>
+                <div class='box_3 box_last'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>I punti di forza</span></h3>
+                    </div>
+                    <ul>
+                        <li>Corso full-immersion ricco di laboratori</li>
+                        <li>Posti limitati e approccio 1-to-1</li>
+                        <li>Sala perfettamente attrezzata in centro a Milano</li>
+                        <li>Prezzo concorrenziale</li>
+                        <li>Attestato di partecipazione</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='lineare'>
+                <div class="addthis_wrapper lineare_no">
+                          <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style lineare_no">
+    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    <a class="addthis_button_tweet" style='margin-left:20px;'></a>
+    <a class="addthis_button_pinterest_pinit"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511288d075bcec8a"></script>
+    <!-- AddThis Button END -->
+                            <!-- AddThis Button END -->
+                </div>
+            </div>
+            <div class='lineare_no'>
+                <p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso sul Cloud Computing!</p>
+            </div>
+        </div>
+        
+        <div id='block2' class='block'> 
+            <a name='programma' class='ancor'></a> 
+            
+            <div class='lineare_25'>
+            
+                <div class='meta'>
+                    <div class='title ico_expert'>    
+                        <div class='trequarti destra'>
+                            <h3 style='text-align:left'><span class='grassetto'>Modulo 1: Corso di Cloud Computing</span></h3>
+                            <h3 style='text-align:left'>8 ore - giovedì 17 ottobre 2013</h3>
+                        </div>
+                    </div>
+                    <div class='lineare'>
+                    <p class='testo17'>L'obiettivo del corso è la comprensione delle metodologie principali per la progettazione di applicativi scalabili, grazie ad un esempio guidato e condiviso attraverso il quale progettare insieme un applicativo in alta disponibilità e basato su servizi scalabii.</p>
+                    <p><strong>A chi è rivolto</strong>: sviluppatori, solution architect e responsabili IT che desiderano iniziare a lavorare con il Cloud Computing ed acquisire un'ottima conoscenza del Cloud Computing</p>
+                    <p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di un linguaggio di programmazione o scripting (quale PHP, Javascript o JAVA)</p>
+                    <p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, pranzo, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
+                    <p><strong>Costo</strong>: 299,00 &euro; iva esclusa, ma soli 199,00 &euro; i.e. prenotando in anticipo</p>
+                    <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
+                    </div>
+                </div>
+                
+                <div class='meta destra'>
+                    <div class='programs lineare_no'>
+                        <div class='program  program2'>
+                            <div class='quinto'>09:00</div>
+                            <div class='trequarti'>
+                                <h3>Registrazione partecipanti &amp; presentazione</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>09:30</div>
+                            <div class='trequarti'>
+                                <h3>Teoria della scalabilità e S.O.A (Service Oriented Architecture)</h3> 
+                                <p>Metodologie per la progettazione di applicativi in Cloud e progetto d'esempio</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>10:30</div>
+                            <div class='trequarti'>
+                                <h3>Coffee break</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>10:45</div>
+                            <div class='trequarti'>
+                                <h3>Comprendere ed usare i prodotti Amazon Web Services</h3> 
+                                <p>Presentazione dei servizi (IAM, EC2, S3, RDS, Elasticache...) ed esempi d'uso</p>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>11:45</div>
+                            <div class='trequarti'>
+                                <h3>Laboratorio pratico sulla Console Web Amazon</h3> 
+                                <p>Percorso interattivo per imparare a gestire utenti, istanze e servizi AWS dal browser</p>
+                            </div>
+                        </div>                      
+                        <div class='program  program2'>
+                            <div class='quinto'>13:00</div>
+                            <div class='trequarti'>
+                                <h3>Pausa Pranzo</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>14:00</div>
+                            <div class='trequarti'>
+                                <h3>Gestione dei file statici (html, js, css, img...) con S3 e CDN</h3> 
+                                <p>Laboratorio sulla integrazione di S3 e CloudFront con siti web</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>15:30</div>
+                            <div class='trequarti'>
+                                <h3>Coffee break</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>15:45</div>
+                            <div class='trequarti'>
+                                <h3>Database in cloud</h3> 
+                                <p>Soluzioni e servizi scalabili per gestire il nostro database (NoSQL / SQL)</p>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>16:45</div>
+                            <div class='trequarti'>
+                                <h3>Esempi reali e calcolo dei costi</h3> 
+                                <p>Laboratorio sulla progettazione e calcolo dei costi con AWS</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>17:45</div>
+                            <div class='trequarti'>
+                                <h3>Chiusura corso</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            <div class='lineare_75'>
+            
+                <div class='meta'>
+                    <div class='title ico_expert ico_expert2'>    
+                        <div class='trequarti destra'>
+                            <h3 style='text-align:left'><span class='grassetto' style='letter-spacing:-1px'>Modulo 2: Corso di Scalabilità avanzata</span></h3>
+                            <h3 style='text-align:left'>8 ore - venerdì 18 ottobre 2013</h3>
+                        </div>
+                    </div>
+                    <div class='lineare'>
+                    <p class='testo17'>Questo modulo più avanzato analizza nel dettaglio i metodi e le tecnologie per la progettazione e deploy di applicativi scalabili e in alta disponibilità, con una particolare attenzione alle tecniche di autoscaling automatizzate, attraverso esempi guidati e laboratori pratici.</p>
+                    <p><strong>A chi è rivolto</strong>: sviluppatori, solution architect e responsabili IT che vogliono acquisire una conoscenza avanzata delle metodologie di autoscaling e delle tecnologie AWS</p>
+                    <p><strong>Competenze richieste</strong>: conoscenza dei prodotti AWS e teorie di base di scalabilità</p>
+                    <p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, pranzo, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
+                    <p><strong>Costo</strong>: 299,00 &euro; iva esclusa, ma soli 199,00 &euro; i.e. prenotando in anticipo</p>
+                    <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
+                    </div>
+                </div>
+                
+                <div class='meta destra'>
+                    <div class='programs lineare_no'>
+                        <div class='program  program2'>
+                            <div class='quinto'>09:00</div>
+                            <div class='trequarti'>
+                                <h3>Registrazione partecipanti &amp; presentazione</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>09:30</div>
+                            <div class='trequarti'>
+                                <h3>Teoria di scalabilità avanzata</h3> 
+                                <p>Metodologie e laboratorio guidato per raggiungere la scalabilità</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>10:30</div>
+                            <div class='trequarti'>
+                                <h3>Coffee break</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>10:45</div>
+                            <div class='trequarti'>
+                                <h3>Metriche e Allarmi: CloudWatch + Simple Notification Service</h3> 
+                                <p>Analizziamo i consumi e controlliamo lo stato del nostro applicativo</p>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>12:00</div>
+                            <div class='trequarti'>
+                                <h3>Elastic IP &amp; Elastic Load Balancer</h3>
+                                <p>Come gestire istanze, backup e risorse su diversi datacenter.</p> 
+                            </div>
+                        </div>                      
+                        <div class='program  program2'>
+                            <div class='quinto'>13:00</div>
+                            <div class='trequarti'>
+                                <h3>Pausa Pranzo</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>14:00</div>
+                            <div class='trequarti'>
+                                <h3>Istanze virtuali e AMI personalizzate</h3> 
+                                <p>Laboratorio sulla gestione delle proprie Immagini Macchina personalizzate</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>15:30</div>
+                            <div class='trequarti'>
+                                <h3>Coffee break</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>15:45</div>
+                            <div class='trequarti'>
+                                <h3>Autoscaling avanzato</h3>
+                                <p>Come far scalare l'applicazione in base al traffico ed al consumo di risorse</p> 
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>17:00</div>
+                            <div class='trequarti'>
+                                <h3>Deploy di applicativi sulla nuvola</h3> 
+                                <p>Metodologie di deploy </p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>17:45</div>
+                            <div class='trequarti'>
+                                <h3>Chiusura corso</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div>
+        
+        
+        <div  class='block'> 
+            <h3><span class='grassetto'></span></h3>
+            <div class='lineare testo_cen'><img src='clouds.png' alt='' /></div>
+            <div class='lineare testo_cen'><p class='testo_cen testo17'>Il nostro Corso è un percorso formativo completo e professionale, studiato per formare i partecipanti attraverso sessioni approfondite e laboratori pratici. </p><p class='testo17'>Rappresenta un'occasione imperdibile per sviluppatori e aziende che desiderano aggiornare il proprio bagaglio di competenze e ottenere nuovi sbocchi lavorativi.</p></div>
+        </div>
+        
+        
+            
+        <div id='block3' class='block'> 
+            <a name='biglietti' class='ancor'></a> 
+            <div class='lineare_no testo_cen' >
+                <h3>I posti sono limitati! Solo entro il 20 maggio puoi accedere al biglietto scontato del 30%!</h3>
+                
+                    
+                <div class='lineare_25 buy'>
+                
+                    <div class='terzo'>
+                        <div class='title ico_expert_min'>    
+                            <div class='trequarti destra'>
+                                <h3><span class='grassetto'>1: Corso di Cloud Computing</span></h3>
+                                <h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
+                                <h3>prenotando ora solo 199,00 &euro; i.e.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='terzo margin_left_5'>
+                        <div class='title ico_expert_min ico_expert2_min'>    
+                            <div class='trequarti destra'>
+                                <h3><span class='grassetto'>2: Corso di Scalabilità Avanzata</span></h3>
+                                <h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
+                                <h3>prenotando ora solo 199,00 &euro; i.e.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='terzo margin_left_5'>
+                        <div class='title ico_expert_min ico_expert3_min'>    
+                            <div class='trequarti destra'>
+                                <h3><span class='grassetto'>Corso 1 + Corso 2</span></h3>
+                                <h3 style='font-size:15px;'>prezzo intero 499,00 &euro; i.e.</h3>
+                                <h3>prenotando ora solo 349,00 &euro; i.e.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class='lineare' >
+                <div style="width:100%; text-align:left;" ><div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=6618739829&ref=etckt&v=2" frameborder="0" height="477" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Emissione biglietti online</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/event/6618739829?ref=etckt">Corso di Cloud Computing per Applicazioni Web</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div></div>
+                <div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
+            </div>
+        </div>
+        
+        
+        <div id='block4' class='block'> 
+            <a name='location' class='ancor'></a> 
+            <div class='title'>    
+                <h3><span class='grassetto'>La Location</span></h3>
+            </div>
+             <p class="testo_cen">I Corsi si tengono nella sede della <strong>Adiuva Formazione</strong>, in spazi dedicati a corsi formativi, in prossimità della metro e stazione ferroviaria di <i>Cadorna</i>, in una posizione strategica e facilmente raggiungibile.</p>
+             <p class="testo_cen"><strong><a href='http://www.adiuvaformazione.it/' target='_blank'>ADIUVA Formazione</a></strong><br/>Piazzale Cadorna, 10 - 20123 Milano </p>
+            <div class='lineare_20' id='map_canvas_over'>
+                <div class='lineare_no' id='map_canvas'></div>
+            </div>
+            <div class='lineare_20'>
+                <div class='quinto'>
+                    <p><strong>In Città (auto e mezzi pubblici)</strong></p>
+                    <p>La sede è comodamente raggiungibile in <strong>metropolitana</strong> linea 1 (rossa) e linea 2 (verde) fermata Cadorna (a pochi metri dalla sede). Tram: 1, 16, 19, 27 - pulman: 61, 94, 54 </p>
+                    <p>In auto seguire le indicazioni per Parco Sempione ed il Castello Sforzesco.</p>
+                </div>
+                <div class='quinto' style='margin-left:8%;'>
+                    <p><strong>In Treno</strong></p>
+                     <p>
+                        La sede dei corsi è a pochi metri dalla stazione FS Cadorna. Per chi arriva con l'<strong>alta velocità</strong> (<a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a>) scendere a Milano Centrale o Porta Garibaldi e prendere la metropolitana linea 2 (verde) in direzione Assago fino alla stazione Cadorna.
+                    </p>
+                </div>
+                <div class='quinto' style='margin-left:8%;'>
+                    <p><strong>In Aereo</strong></p>
+                     <p>
+                        Dagli aeroporti di <strong>Malpensa, Linate e Bergamo</strong> raggiungere con i collegamenti bus Milano Centrale e prendere la metropolitana linea 2 (verde) direzione Assago fino a fermata Cadorna.
+                    </p>
+                </div>
+                <div class='quinto destra' >
+                    <p><strong>Pernottamento</strong></p>
+                    <p>
+                        Sono disponibili diverse soluzioni in loco adatte ad ogni budget: <a href="http://www.booking.com/searchresults.it.html?sid=00387096f9663a0a8f65848c300ccf41;dcid=1;ac_pageview_id=17344cb53f060165;checkin_monthday=4;checkin_year_month=2013-6;checkout_monthday=5;checkout_year_month=2013-6;class_interval=1;csflt=%7B%7D;dest_id=-121726;dest_type=city;inac=0;interval_of_time=undef;redirected_from_city=0;redirected_from_landmark=0;review_score_group=empty;rfh=0;score_min=0;src=index;ss_all=0;ssb=empty;radius=0;city=-121726;;nflt=district%3D2284%3B;track_ajax_filters=1" target="_blank">Alberghi in zona</a>
+                    </p>
+                </div>
+            </div>
+            <div class='lineare_no'>
+                <div class='box_3'><img src='/piazzale-cadorna.jpg' /></div>
+                <div class='box_3'><img src='http://www.adiuvaformazione.it/foto/prod_350-328_big.jpg' /></div>
+                <div class='box_3 box_last'><img src='http://adiuvaformazione.it/foto/prod_350-315_zom.JPG'  /></div>
+            </div>
+        </div>
+        
+        
+        <div id='block5' class='block'> 
+            <a name='chisiamo' class='ancor'></a> 
+            <div class='title'>    
+                <h3><span class='grassetto'>Chi Siamo</span></h3>
+            </div>
+            <div class='lineare_no testo_cen' >
+            
+                <div class='duequinti sinistra testo_sin'>
+                    <p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
+                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Torino, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
+                    <p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
+                    <p><img src='sponsor_corley.png' border='' /></p>
+                    <div class='lineare'>
+                        <p><strong>I docenti</strong></p>
+                        <p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
+                        <p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
+                        <a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
+                    </div>
+                    <div class='lineare'>
+                    <img src='/cards.jpg' border='' />
+                    </div>
+                </div>
+                    
+                <div class='duequinti destra testo_sin'>
+                    <div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>392 3081714</b>!</p></div>
+                    <div class='lineare'>
+                        <iframe src="https://docs.google.com/a/corley.it/spreadsheet/embeddedform?formkey=dDFVRkd3NTgyaUl5dGlOdGU1cXMxWnc6MQ" width="500" height="1003" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		
-		
+        
+        
 </div>
-	
-	<div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
-	<div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 4-5 Giugno 2013, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
+    
+    <div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
+    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 17-18 ottobre 2013, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 <script type="text/javascript">
@@ -558,12 +543,12 @@ window.addEvent('domready', function() {
   })();
 
 </script>
-		
+        
 </div>
 </div>
 
 
 
-		
+        
 </body>
 </html>
