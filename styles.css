@@ -442,7 +442,7 @@ h3.bonze {
 .block {
 	clear: both;
 	width:100%;
-	margin-top:200px;
+	margin-top:100px;
 	padding-top:50px;
 }
 .block .title {
@@ -1014,3 +1014,73 @@ img.slimbox_thumb {
 
 
 /** SIMPLE MODAL END */
+
+
+
+/** box info start*/
+    .iscriviti {
+       background:#f1f1f1;
+       padding:2%;
+       width:90%;
+       margin:3%;
+       box-shadow:2px 2px 2px #cdcdcd;
+       border-radius:5px;
+       text-align:center;
+   }
+   .iscriviti form {
+       width:100%;
+       text-align:center;
+   }
+   .iscriviti h3 {
+       margin:10px 0;
+   }
+   .iscriviti form input {
+       font-size:22px;
+       letter-spacing:1px;  
+       height:30px;                      
+       line-height:30px;
+       margin:0 10px;
+   }
+   .iscriviti form input.codice {
+       width:100px;
+   }
+   .iscriviti form input.email {
+       width:500px;
+   }
+   .iscriviti form img{
+       margin-top: 10px;
+       vertical-align:sub;
+   }
+                
+                
+input.cssbutton,a.cssbutton {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    background-repeat: no-repeat;
+    line-height: normal;
+    border: 1px solid transparent;
+    -webkit-transition: 0.2s linear all;
+    -moz-transition: 0.2s linear all;
+    transition: 0.2s linear all;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #89a009;  /*#999*/
+    background-repeat: no-repeat;
+    background-image:none;
+    width:auto;
+    border-radius:3px;
+}
+.cssbutton2,a.cssbutton2 {
+    background-color:#a74300;
+}
+.cssbutton3,a.cssbutton3 {
+    background-color:#bbb;
+    color:#000;
+}
+.cssbutton:hover {
+    border: 1px solid #444;
+    background-color: #444;
+    color:#fff;
+}
+/** box info end*/
