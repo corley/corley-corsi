@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="description" content="Corsi di Formazione AWS Amazon Web Services, a Milano il 17-18 ottobre 2013" />
+<meta name="keyword" content="" />
+<meta name="Copyright" content="Corley" />
+<meta name="Language" content="Italian" />
+<meta name="robots" content ="index,follow" />
+<meta name="documentType" content="WebDocument" />
+<meta name="publisher" content="" />
+<meta name="ICBM" content="45.030, 7.40" />
+<meta name="geo.position" content="45.030, 7.40" />
+<title>Corsi di Formazione Cloud Computing - AWS Amazon Web Services, AngularJS, Deploy, PHP</title>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+                                                      
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css' />
+
+     
+<script type="text/javascript" src="mootools-1.4.1-core.js"></script>
+<script type="text/javascript" src="mootools-1.4.0.1-more.js"></script>
+<script type="text/javascript" src="simple-modal.js"></script>
+
+<link href="styles.css?r=3" rel="stylesheet" type="text/css" media="screen" />
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type='text/javascript'>
+
+
+
+
+    function initialize_map() {
+                var mapOptions = {
+                  zoom: 15,
+                  center: new google.maps.LatLng(45.4907412, 9.1875897),
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  scrollwheel: false
+                }
+                var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    
+                var hotel = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.468754, 9.17685),
+                    map: map,
+                    icon: 'marker.png',
+                    title:"Corso Cloud Computing"
+                });
+          }
+    </script>
+
+<script type='text/javascript'>  
+window.addEvent('domready', function() {  
+    
+    $$('.program2').fade(0.6);
+    
+  //  initialize_map();
+
+    var modal = {
+        title: "",
+        contents: "",
+        go: false
+        
+            
+    }
+    var location = window.location.search.split("&");
+    if(location[0]) location = location[0];
+    else location = "";
+    switch (location) {
+    
+        case "?php" :
+            modal.title = "Sei uno sviluppatore PHP?";
+            modal.contents = "Il Corso di Cloud Computing ti aiuterà a creare applicativi PHP scalabili, essendo focalizato sulla gestione di <strong>Apache e MySQL</strong>.<br/><br/>Ti aiuterà a incrementare il tuo bagaglio tecnico permettendoti di progettare e sviluppare <strong>siti e applicativi in Cloud con il PHP</strong>. Non perdere l'occasione!";
+            modal.go = true;
+        break;
+        default:
+            modal.title = "Aperte le pre-iscrizioni per il corso AngularJS a Milano";
+            modal.contents = "Stiamo organizzando un corso AngularJS a Milano nel periodo Aprile-Maggio. Lascia la tua email per rimanere informato sulla data definitiva e ricevere il codice sconto per partecipare!<br/><br/><strong>Il costo sarà inferiore a 100 &euro;</strong>.";
+            modal.go = true;
+        break;
+    }
+    
+    if(modal.go) {
+        SM = new SimpleModal({width:600, btn_ok: "Ottima notizia! (chiudi la finestra)"});             
+        SM.show(modal);
+    }
+        
+      
+    var links = $$('.link');
+    links.each(function(link, ii) {
+        link.addEvent('click', function(evento) {
+            evento.preventDefault();
+            var iii = ii+1;
+            new Fx.Scroll(window).toElement('block'+iii);
+        });
+    });
+    
+    $('gotop').addEvent('click', function() {
+        new Fx.Scroll(window).toTop();
+    });
+    
+    
+        
+    var update_pos = function(fxc, el){
+        var scroll = window.getScroll();
+        fxc.start({
+            'top': [el.getStyle('top'), scroll.y+250]
+        });
+    }
+        
+
+});
+</script>
+
+        
+</head>
+<body> 
+<div class='lineare_no' id='liv0'>
+    <div id='fixed' class='lineare_no'>
+        <a href='#conferenza' class='link' >I nostri corsi</a>
+        <a href='#programma' class='link'>Prossimi appuntamenti</a>
+        <a href='#chisiamo' class='link'>Chi siamo &amp; contatti</a>
+        <!-- <a href='https://twitter.com/_CloudConf_' target='_blank'><img src='twitter.png' border='0' /></a>
+        <a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>-->
+    </div>
+    
+    
+    <div class='inside' id='liv1'>
+        <div class='lineare_no' id='header'>
+            <h2>dai creatori della Cloud Conference:</h2>
+            <h1>Corsi professionali per sviluppatori</h1>
+            <h3>Formazione Professionale su Scalabilità, Cloud Development e prodotti Amazon Web Services.</h3>
+        </div>
+        
+        
+        <div id='block1' class='block'> 
+            <a name='conferenza' class='ancor'></a>    
+            <div class='lineare_no'>
+                <div class='box_3'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>I nostri corsi</span></h3>
+                    </div>
+                    <div class='lineare_no' >
+                        <p>Organizziamo corsi professionali di 8-16 ore su prodotti Amazon Web SErvices, PHP, AngularJS e Deploy.<br/>&nbsp;</p>
+                        <p>I nostri corsi, ricchi di <strong>laboratori pratici</strong> e nati da un attento studio del programma, sono dedicati a sviluppatori, IT managers e startupper.</p>
+                    </div>
+                </div>
+                <div class='box_3'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>Perchè noi</span></h3>
+                    </div>
+                    <div class='lineare_no' >
+                        <p>Siamo <strong>sviluppatori senior</strong> specializzati nella progettazione e deploy di applicativi scalabili con i prodotti Amazon Web Services.<p>
+                        <p>Siamo promotori e ideatori della <a href='http://www.cloudconf.it' class='grassetto'>Cloud Conference</a>, il primo grande evento italiano dedicato alla scalabilità e cloud development.</p>
+                    </div>
+                </div>
+                <div class='box_3 box_last'>
+                    <div class='title'>
+                        <h3 class='testo_sin'><span class='grassetto'>I punti di forza</span></h3>
+                    </div>
+                    <ul>
+                        <li>Corsi full-immersion ricchi di laboratori</li>
+                        <li>Posti limitati e approccio 1-to-1</li>
+                        <li>Sala perfettamente attrezzata</li>
+                        <li>Prezzo concorrenziale</li>
+                        <li>Attestato di partecipazione</li>
+                    </ul>
+                </div>
+            </div>
+            <div class='lineare'>
+                <div class="addthis_wrapper lineare_no">
+                          <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style lineare_no" addthis:url="http://corsi.corley.it">
+    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    <a class="addthis_button_tweet" style='margin-left:20px;'></a>
+    <a class="addthis_button_pinterest_pinit"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-511288d075bcec8a"></script>
+    <!-- AddThis Button END -->
+                            <!-- AddThis Button END -->
+                </div>
+            </div>
+      
+        </div>
+        
+        
+        
+        <div id='block2' class='block'> 
+            <a name='programma' class='ancor'></a> 
+            
+            <div class="iscriviti">
+                <h3>Lascia la tua email per ricevere informazioni sul prossimo corso su <strong>AngularJS</strong> a Milano</h3>
+                    <form action='http://www.corley.it/form/quest/salva/5.html' method='post'>
+                    <input type="text" name="domanda_29" placeholder="Il tuo indirizzo email" class="email"/>
+                    <input type="text" name="f_captcha" placeholder="Captcha" class="codice"/>
+                    <img  title="" src="http://www.corley.it/form/captcha.html" border="0" alt="0"/>
+                    <input type="submit" class="cssbutton" value="invia" />
+                </form>
+                <p>Ti ricontatteremo non appena definito il calendario proponendoti un codice sconto per il corso!</p>
+            </div>
+            
+        
+        </div>
+        <div id='block3' class='block'> 
+            <a name='chisiamo' class='ancor'></a> 
+            <div class='title'>    
+                <h3><span class='grassetto'>Chi Siamo</span></h3>
+            </div>
+            <div class='lineare_no testo_cen' >
+            
+                <div class='duequinti sinistra testo_sin'>
+                    <p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
+                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> 2013 e 2014, primo grande evento italiano interamente dedicato alla scalabilità e cloud development, e degli eventi a tappe <strong>CloudParty</strong>.</p>
+                    <p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a>, <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a> e <a href='http://www.cloudpartyit' target='_blank'>CloudParty.it</a>
+                    <p><img src='sponsor_corley.png' border='' /></p>
+                    <div class='lineare'>
+                        <p><strong>I docenti</strong></p>
+                        <p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
+                        <p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
+                        <a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
+                    </div>
+                    <div class='lineare'>
+                    <img src='/cards.jpg' border='' />
+                    </div>
+                </div>
+                    
+                <div class='duequinti destra testo_sin'>
+                    <div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>392 3081714</b>!</p></div>
+                    <div class='lineare'>
+                        <iframe src="https://docs.google.com/a/corley.it/spreadsheet/embeddedform?formkey=dDFVRkd3NTgyaUl5dGlOdGU1cXMxWnc6MQ" width="500" height="1003" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+</div>
+    
+    <div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
+    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - <span id='gotop' class='puntatore'>torna in cima</span></div>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32091906-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+
+</script>
+      
+
+
+
+        
+</body>
+</html>

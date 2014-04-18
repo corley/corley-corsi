@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="description" content="Corsi di Formazione AWS Amazon Web Services, a Milano il 17-18 ottobre 2013" />
+<meta name="description" content="Workshop AngularJS, a Milano il 28 Maggio 2014" />
 <meta name="keyword" content="" />
 <meta name="Copyright" content="Corley" />
 <meta name="Language" content="Italian" />
@@ -12,7 +12,7 @@
 <meta name="publisher" content="" />
 <meta name="ICBM" content="45.030, 7.40" />
 <meta name="geo.position" content="45.030, 7.40" />
-<title>Corsi di Formazione Cloud Computing - AWS Amazon Web Services, AngularJS, Deploy, PHP</title>
+<title>Workshop AngularJS a Milano</title>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -27,6 +27,16 @@
 
 <link href="styles.css?r=3" rel="stylesheet" type="text/css" media="screen" />
 
+<style type="text/css">
+#liv0,#fixed {
+    background-image:url("pixels_red.jpg");
+}
+#map_canvas_over, .box_3 img {
+    background-color:#731613;
+    border-color:#731613;
+}
+</style>
+
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
 
@@ -35,12 +45,10 @@
 <script type='text/javascript'>
 
 
-
-
     function initialize_map() {
                 var mapOptions = {
                   zoom: 15,
-                  center: new google.maps.LatLng(45.4907412, 9.1875897),
+                  center: new google.maps.LatLng(45.468754, 9.17685),
                   mapTypeId: google.maps.MapTypeId.ROADMAP,
                   scrollwheel: false
                 }
@@ -60,7 +68,7 @@ window.addEvent('domready', function() {
     
     $$('.program2').fade(0.6);
     
-  //  initialize_map();
+    initialize_map();
 
     var modal = {
         title: "",
@@ -80,9 +88,9 @@ window.addEvent('domready', function() {
             modal.go = true;
         break;
         default:
-            modal.title = "Aperte le pre-iscrizioni per il corso AngularJS a Milano";
-            modal.contents = "Stiamo organizzando un corso AngularJS a Milano nel periodo Aprile-Maggio. Lascia la tua email per rimanere informato sulla data definitiva e ricevere il codice sconto per partecipare!<br/><br/><strong>Il costo sarà inferiore a 100 &euro;</strong>.";
-            modal.go = true;
+            modal.title = "Biglietti scontati fino al 24 Aprile!";
+            modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: un modulo a soli <strong>199,00</strong> &euro; (invece che 299,00), entrambi a  <strong>349,00</strong> &euro; (invece che 499,00)!";
+            modal.go = false;
         break;
     }
     
@@ -123,9 +131,11 @@ window.addEvent('domready', function() {
 <body> 
 <div class='lineare_no' id='liv0'>
     <div id='fixed' class='lineare_no'>
-        <a href='#conferenza' class='link' >I nostri corsi</a>
-        <a href='#programma' class='link'>Prossimi appuntamenti</a>
-        <a href='#chisiamo' class='link'>Chi siamo &amp; contatti</a>
+        <a href='#conferenza' class='link' >Il Corso</a>
+        <a href='#programma' class='link'>Programma</a>
+        <a href='#biglietti' class='link'>Prenota il tuo posto</a>
+        <a href='#location' class='link'>Location</a>
+        <a href='#chisiamo' class='link'>Chi Siamo &amp; contatti</a>
         <!-- <a href='https://twitter.com/_CloudConf_' target='_blank'><img src='twitter.png' border='0' /></a>
         <a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>-->
     </div>
@@ -133,9 +143,9 @@ window.addEvent('domready', function() {
     
     <div class='inside' id='liv1'>
         <div class='lineare_no' id='header'>
-            <h2>dai creatori della Cloud Conference:</h2>
-            <h1>Corsi professionali per sviluppatori</h1>
-            <h3>Formazione Professionale su Scalabilità, Cloud Development e prodotti Amazon Web Services.</h3>
+            <h2>28 Maggio 2014, a Milano</h2>
+            <h1>Workshop AngularJS</h1>
+            <h3>Corso di Formazione Professionale per Sviluppatori.</h3>
         </div>
         
         
@@ -144,11 +154,11 @@ window.addEvent('domready', function() {
             <div class='lineare_no'>
                 <div class='box_3'>
                     <div class='title'>
-                        <h3 class='testo_sin'><span class='grassetto'>I nostri corsi</span></h3>
+                        <h3 class='testo_sin'><span class='grassetto'>Il workshop</span></h3>
                     </div>
                     <div class='lineare_no' >
-                        <p>Organizziamo corsi professionali di 8-16 ore su prodotti Amazon Web SErvices, PHP, AngularJS e Deploy.<br/>&nbsp;</p>
-                        <p>I nostri corsi, ricchi di <strong>laboratori pratici</strong> e nati da un attento studio del programma, sono dedicati a sviluppatori, IT managers e startupper.</p>
+                        <p>Corso intensivo di 8 ore che rappresenta il primo gradino per conoscere, utilizzare e lavorare con AngularJS, il framework JavaScript by Google.</p>
+                        <p>Il corso, ricco di <strong>laboratori pratici</strong> e nato ad un attento studio del programma, è dedicato agli sviluppatori.</p>
                     </div>
                 </div>
                 <div class='box_3'>
@@ -156,8 +166,8 @@ window.addEvent('domready', function() {
                         <h3 class='testo_sin'><span class='grassetto'>Perchè noi</span></h3>
                     </div>
                     <div class='lineare_no' >
-                        <p>Siamo <strong>sviluppatori senior</strong> specializzati nella progettazione e deploy di applicativi scalabili con i prodotti Amazon Web Services.<p>
-                        <p>Siamo promotori e ideatori della <a href='http://www.cloudconf.it' class='grassetto'>Cloud Conference</a>, il primo grande evento italiano dedicato alla scalabilità e cloud development.</p>
+                        <p>Siamo <strong>sviluppatori senior</strong> specializzati nella progettazione e deploy di applicativi scalabili frontend/backend di ultima generazione.<p>
+                        <p>Siamo gli ideatori della <a href='http://www.cloudconf.it' class='grassetto'>Cloud Conference</a>, il primo grande evento italiano dedicato alla scalabilità e cloud development.</p>
                     </div>
                 </div>
                 <div class='box_3 box_last'>
@@ -165,9 +175,9 @@ window.addEvent('domready', function() {
                         <h3 class='testo_sin'><span class='grassetto'>I punti di forza</span></h3>
                     </div>
                     <ul>
-                        <li>Corsi full-immersion ricchi di laboratori</li>
+                        <li>Corso full-immersion ricco di laboratori</li>
                         <li>Posti limitati e approccio 1-to-1</li>
-                        <li>Sala perfettamente attrezzata</li>
+                        <li>Sala perfettamente attrezzata nel Toolbox Milano</li>
                         <li>Prezzo concorrenziale</li>
                         <li>Attestato di partecipazione</li>
                     </ul>
@@ -176,7 +186,7 @@ window.addEvent('domready', function() {
             <div class='lineare'>
                 <div class="addthis_wrapper lineare_no">
                           <!-- AddThis Button BEGIN -->
-    <div class="addthis_toolbox addthis_default_style lineare_no" addthis:url="http://corsi.corley.it">
+    <div class="addthis_toolbox addthis_default_style lineare_no">
     <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
     <a class="addthis_button_tweet" style='margin-left:20px;'></a>
     <a class="addthis_button_pinterest_pinit"></a>
@@ -187,28 +197,168 @@ window.addEvent('domready', function() {
                             <!-- AddThis Button END -->
                 </div>
             </div>
-      
+            <div class='lineare_no'>
+                <p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso su AngularJS!</p>
+            </div>
         </div>
-        
-        
         
         <div id='block2' class='block'> 
             <a name='programma' class='ancor'></a> 
             
-            <div class="iscriviti">
-                <h3>Lascia la tua email per ricevere informazioni sul prossimo corso su <strong>AngularJS</strong> a Milano</h3>
-                    <form action='http://www.corley.it/form/quest/salva/5.html' method='post'>
-                    <input type="text" name="domanda_29" placeholder="Il tuo indirizzo email" class="email"/>
-                    <input type="text" name="f_captcha" placeholder="Captcha" class="codice"/>
-                    <img  title="" src="http://www.corley.it/form/captcha.html" border="0" alt="0"/>
-                    <input type="submit" class="cssbutton" value="invia" />
-                </form>
-                <p>Ti ricontatteremo non appena definito il calendario proponendoti un codice sconto per il corso!</p>
-            </div>
+            <div class='lineare_25'>
             
+                <div class='meta'>
+                    <div class='title ico_expert ico_expert2'>    
+                        <div class='trequarti destra'>
+                            <h3 style='text-align:left'><span class='grassetto'>Sviluppo con AngularJS</span></h3>
+                            <h3 style='text-align:left'>8 ore - mercoledì 28 maggio 2014</h3>
+                        </div>
+                    </div>
+                    <div class='lineare'>
+                    <p class='testo17'>L'obiettivo del workshop è la comprensione e utilizzo del framework JavaScript AngularJS di Google, attraverso un percorso completo sugli strumenti da adottare, i metodi da utilizzare e le strategie da seguire nella creazione di una app Angular.</p>
+                    <p><strong>A chi è rivolto</strong>: sviluppatori (sia frontend che backend)</p>
+                    <p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di JavaScript, utilizzo di Git</p>
+                    <p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
+                    <p><strong>Costo</strong>: 129,00 &euro; iva inclusa, ma soli 89,00 &euro; prenotando in anticipo</p>
+                    <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
+                    </div>
+                </div>
+                
+                <div class='meta destra'>
+                    <div class='programs lineare_no'>
+                        <div class='program  program2'>
+                            <div class='quinto'>09:00</div>
+                            <div class='trequarti'>
+                                <h3>Registrazione partecipanti &amp; presentazione</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>09:30</div>
+                            <div class='trequarti'>
+                                <h3>Introduzione ad AngularJS</h3> 
+                                <p>Presentazione del framework e primi passi</p>
+                                <h3>Progettazione con AngularJS</h3> 
+                                <p>Con laboratorio pratico per la creazione della nostra applicazione e gestione delle dipendenze (Bower)</p>
+                                <h3>Scope e controller</h3> 
+                                <p>Coding sull'app con utilizzo di $scope e scrittura del nostro primo controller</p>
+                            </div>
+                        </div>
+                       
+                        <div class='program  program2'>
+                            <div class='quinto'>13:00</div>
+                            <div class='trequarti'>
+                                <h3>Pausa Pranzo</h3>
+                            </div>
+                        </div>
+                        <div class='program'>
+                            <div class='quinto'>14:00</div>
+                            <div class='trequarti'>
+                                <h3>Direttive, filtri e routing</h3> 
+                                <p>Creazione e utilizzo di componenti avanzate (Directive, Filter, strategie di routing avanzate)</p>
+                                <h3>RESTful integration</h3> 
+                                <p>Come interagine con risorse rest con $http e integrazione backend</p>
+                                <h3>Deploy e test app</h3> 
+                                <p>Strategie di deploy e testing dell'applicazione</p>
+                            </div>
+                        </div>
+                        <div class='program  program2'>
+                            <div class='quinto'>17:30</div>
+                            <div class='trequarti'>
+                                <h3>Chiusa del corso e confronto finale</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
         
+        
+        <div  class='block'> 
+            <h3><span class='grassetto'></span></h3>
+            <div class='lineare testo_cen'><img src='angularjs-logo.png' alt='' /></div>
+            <div class='lineare testo_cen'><p class='testo_cen testo17'>Il nostro Corso è un percorso formativo completo e professionale, studiato per formare i partecipanti attraverso sessioni approfondite e laboratori pratici. </p><p class='testo17'>Rappresenta un'occasione imperdibile per sviluppatori e aziende che desiderano aggiornare il proprio bagaglio di competenze e ottenere nuovi sbocchi lavorativi.</p></div>
         </div>
+        
+        
+            
         <div id='block3' class='block'> 
+            <a name='biglietti' class='ancor'></a> 
+            <div class='lineare_no testo_cen' >
+                <h3>I posti sono limitati! Solo pochi biglietti scontati "prenota prima"</h3>
+                
+                    
+                <div class='lineare_25 buy'>
+                
+                    <div class='meta'>
+                        <div class='title ico_expert_min ico_expert2_min'>    
+                            <div class='quattroquinti destra'>
+                                <h3><span class='grassetto'>Workshop AngularJS</span></h3>
+                                <h3 style='font-size:15px;'>prezzo intero 129,00 &euro; iva inc.</h3>
+                                <h3>prenotando ora solo 89,00 &euro; iva inc.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class='meta destra'>
+                        <div class='title'>    
+                                <h3>Il corso include</h3>
+                                <h3 style='font-size:15px;'>
+                                    coffee break, accesso wi-fi, materiale informativo (cartaceo + Git), attestato di partecipazione, sconto su corso avanzato 
+                                </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class='lineare' >
+                <div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.it/tickets-external?eid=11356368203&ref=etckt" frameborder="0" height="320" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Vendi i biglietti</a> <span style="color:#ddd;">attraverso</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
+                <div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
+            </div>
+        </div>
+        
+        
+        <div id='block4' class='block'> 
+            <a name='location' class='ancor'></a> 
+            <div class='title'>    
+                <h3><span class='grassetto'>La Location</span></h3>
+            </div>
+             <p class="testo_cen">I Corsi si tengono nella sede della <strong>Adiuva Formazione</strong>, in spazi dedicati a corsi formativi, in prossimità della metro e stazione ferroviaria di <i>Cadorna</i>, in una posizione strategica e facilmente raggiungibile.</p>
+            <p class="testo_cen"><strong><a href='http://www.adiuvaformazione.it/' target='_blank'>ADIUVA Formazione</a></strong><br/>Piazzale Cadorna, 10 - 20123 Milano </p>
+         <div class='lineare_20' id='map_canvas_over'>
+                <div class='lineare_no' id='map_canvas'></div>
+            </div>
+            <div class='lineare_20'>
+                <div class='quinto'>
+                    <p><strong>In Città (auto e mezzi pubblici)</strong></p>
+                   <p>La sede è comodamente raggiungibile in <strong>metropolitana</strong> linea 1 (rossa) e linea 2 (verde) fermata Cadorna (a pochi metri dalla sede). Tram: 1, 16, 19, 27 - pulman: 61, 94, 54 </p>
+                   <p>In auto seguire le indicazioni per Parco Sempione ed il Castello Sforzesco.</p>
+                </div>
+                <div class='quinto' style='margin-left:8%;'>
+                    <p><strong>In Treno</strong></p>
+                     <p>La sede dei corsi è a pochi metri dalla stazione FS Cadorna. Per chi arriva con l'<strong>alta velocità</strong> (<a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a>) scendere a Milano Centrale o Porta Garibaldi e prendere la metropolitana linea 2 (verde) in direzione Assago fino alla stazione Cadorna.</p>
+                   </div>
+                <div class='quinto' style='margin-left:8%;'>
+                    <p><strong>In Aereo</strong></p>
+                     <p>
+                        Dagli aeroporti di <strong>Malpensa, Linate e Bergamo</strong> raggiungere con i collegamenti bus Milano Centrale e prendere la metropolitana linea 2 (verde) direzione Assago fino a fermata Cadorna.
+                    </p>
+                </div>
+                <div class='quinto destra' >
+                    <p><strong>Pernottamento</strong></p>
+                    <p>
+                        Sono disponibili diverse soluzioni in loco adatte ad ogni budget: <a href="http://www.booking.com/searchresults.html?src=searchresults&city=-121726&ssne=Milano&ssne_untouched=Milano&ssne=Milano&ssne_untouched=Milano&error_url=http%3A%2F%2Fwww.booking.com%2Fsearchresults.it.html%3Fsid%3Dea760735477162455ee4eb973dd387e2%3Bdcid%3D1%3Bac_position%3D0%3Bac_suggestion_list_length%3D5%3Bcheckin_monthday%3D27%3Bcheckin_year_month%3D2014-4%3Bcheckout_monthday%3D28%3Bcheckout_year_month%3D2014-4%3Bclass_interval%3D1%3Bcsflt%3D%257B%257D%3Bdest_id%3D-121726%3Bdest_type%3Dcity%3Bdtdisc%3D0%3Bhyb_red%3D0%3Binac%3D0%3Bnha_red%3D0%3Bno_rooms%3D1%3Boffset%3D0%3Bproperty_room_info%3D1%3Bredirected_from_city%3D0%3Bredirected_from_landmark%3D0%3Bredirected_from_region%3D0%3Breview_score_group%3Dempty%3Bscore_min%3D0%3Bsi%3Dai%252Cco%252Cci%252Cre%252Cdi%3Bsrc%3Dindex%3Bss%3DMilano%252C%2520Lombardia%252C%2520Italia%3Bss_all%3D0%3Bss_raw%3DMilano%3Bssb%3Dempty%3Bor_radius%3D0%3B&dcid=1&sid=ea760735477162455ee4eb973dd387e2&si=ai%2Cco%2Cci%2Cre%2Cdi&ss=Milano&radius=&checkin_monthday=27&checkin_year_month=2014-5&checkout_monthday=28&checkout_year_month=2014-5&interval_of_time=any&flex_checkin_year_month=any&sb_predefined_group_options_value=1&no_rooms=1&group_adults=1&group_children=0&dest_type=city&dest_id=-121726" target="_blank">Alberghi in zona</a>
+                    </p>
+                </div>
+            </div>
+            <div class='lineare_no'>
+              <div class='box_3'><img src='/piazzale-cadorna.jpg' /></div>
+              <div class='box_3'><img src='http://www.adiuvaformazione.it/foto/prod_350-328_big.jpg' /></div>
+              <div class='box_3 box_last'><img src='http://adiuvaformazione.it/foto/prod_350-315_zom.JPG'  /></div>
+             </div>
+        </div>
+        
+        
+        <div id='block5' class='block'> 
             <a name='chisiamo' class='ancor'></a> 
             <div class='title'>    
                 <h3><span class='grassetto'>Chi Siamo</span></h3>
@@ -217,13 +367,12 @@ window.addEvent('domready', function() {
             
                 <div class='duequinti sinistra testo_sin'>
                     <p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
-                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> 2013 e 2014, primo grande evento italiano interamente dedicato alla scalabilità e cloud development, e degli eventi a tappe <strong>CloudParty</strong>.</p>
-                    <p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a>, <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a> e <a href='http://www.cloudpartyit' target='_blank'>CloudParty.it</a>
+                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Milano, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
+                    <p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
                     <p><img src='sponsor_corley.png' border='' /></p>
                     <div class='lineare'>
-                        <p><strong>I docenti</strong></p>
-                        <p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 9 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, nella gestione di database e nella progettazione di architetture scalabili (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
-                        <p><strong>Walter Dal Mut</strong>: vanta una lunga esperienza nella gestione di sistemi informatici e nello sviluppo di applicativi web in diversi linguaggi. Studia e realizza metodologie scalata per applicativi Cloud based. (<a href='http://walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>linkedin</a>).</p>
+                        <p><strong>Il docente</strong></p>
+                        <p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 10 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, architetture scalabili e single app con AngularJS (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
                         <a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
                     </div>
                     <div class='lineare'>
@@ -232,7 +381,7 @@ window.addEvent('domready', function() {
                 </div>
                     
                 <div class='duequinti destra testo_sin'>
-                    <div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>392 3081714</b>!</p></div>
+                    <div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>011 4365278</b>!</p></div>
                     <div class='lineare'>
                         <iframe src="https://docs.google.com/a/corley.it/spreadsheet/embeddedform?formkey=dDFVRkd3NTgyaUl5dGlOdGU1cXMxWnc6MQ" width="500" height="1003" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
                     </div>
@@ -245,7 +394,7 @@ window.addEvent('domready', function() {
 </div>
     
     <div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
-    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - <span id='gotop' class='puntatore'>torna in cima</span></div>
+    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 28 Maggio 2014, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 <script type="text/javascript">
@@ -259,10 +408,10 @@ window.addEvent('domready', function() {
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
 
 </script>
         
+</div>
 </div>
 </div>
 
