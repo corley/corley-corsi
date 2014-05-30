@@ -3,16 +3,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="description" content="Workshop AngularJS, a Milano il 28 Maggio 2014" />
+<meta name="description" content="Workshop AngularJS, a Bologna il 25 Giugno 2014" />
 <meta name="keyword" content="" />
 <meta name="Copyright" content="Corley" />
 <meta name="Language" content="Italian" />
 <meta name="robots" content ="index,follow" />
 <meta name="documentType" content="WebDocument" />
 <meta name="publisher" content="" />
-<meta name="ICBM" content="45.030, 7.40" />
-<meta name="geo.position" content="45.030, 7.40" />
-<title>Workshop AngularJS a Milano</title>
+<meta name="ICBM" content="44.522274, 11.346878" />
+<meta name="geo.position" content="44.522274, 11.346878" />
+<title>Workshop AngularJS a Bologna</title>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -44,23 +44,43 @@
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type='text/javascript'>
 
+function initialize_map() {
+    var mapOptions = {
+          zoom: 12,
+          center: new google.maps.LatLng(44.522274 ,11.346878),
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-    function initialize_map() {
-                var mapOptions = {
-                  zoom: 15,
-                  center: new google.maps.LatLng(45.468754, 9.17685),
-                  mapTypeId: google.maps.MapTypeId.ROADMAP,
-                  scrollwheel: false
-                }
-                var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-    
-                var hotel = new google.maps.Marker({
-                    position: new google.maps.LatLng(45.468754, 9.17685),
-                    map: map,
-                    icon: 'marker.png',
-                    title:"Corso Cloud Computing"
-                });
-          }
+        var hotel = new google.maps.Marker({
+            position: new google.maps.LatLng(44.522274, 11.346878),
+            map: map,
+            icon: 'marker.png',
+      title:"T3LAB BOLOGNA"
+        });
+
+      }
+ /**     
+      adiuva
+      function initialize_map() {
+            var mapOptions = {
+              zoom: 15,
+              center: new google.maps.LatLng(45.468754, 9.17685),
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              scrollwheel: false
+            }
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+            var hotel = new google.maps.Marker({
+                position: new google.maps.LatLng(45.468754, 9.17685),
+                map: map,
+                icon: 'marker.png',
+                title:"Corso Cloud Computing"
+            });
+      }
+      
+    */  
     </script>
 
 <script type='text/javascript'>  
@@ -88,9 +108,9 @@ window.addEvent('domready', function() {
             modal.go = true;
         break;
         default:
-            modal.title = "Biglietti scontati fino al 24 Aprile!";
-            modal.contents = "Prenotando in anticipo puoi usfruire di un grande sconto: un modulo a soli <strong>199,00</strong> &euro; (invece che 299,00), entrambi a  <strong>349,00</strong> &euro; (invece che 499,00)!";
-            modal.go = false;
+            modal.title = "Super Early Bird";
+            modal.contents = "Il Workshop AngularJS sta arrivando a Bologna, e per l'occasione abbiamo deciso di promuovere il corso!<br/>Prenotando in anticipo puoi usfruire di un grande sconto: pochi biglietti a 89,00 iva inclusa invece di 159,00!!";
+            modal.go = true;
         break;
     }
     
@@ -143,7 +163,7 @@ window.addEvent('domready', function() {
     
     <div class='inside' id='liv1'>
         <div class='lineare_no' id='header'>
-            <h2>28 Maggio 2014, a Milano</h2>
+            <h2>25 Giugno 2014, a Bologna</h2>
             <h1>Workshop AngularJS</h1>
             <h3>Corso di Formazione Professionale per Sviluppatori.</h3>
         </div>
@@ -177,7 +197,7 @@ window.addEvent('domready', function() {
                     <ul>
                         <li>Corso full-immersion ricco di laboratori</li>
                         <li>Posti limitati e approccio 1-to-1</li>
-                        <li>Sala perfettamente attrezzata nel Toolbox Milano</li>
+                        <li>Sala perfettamente attrezzata nel T3Lab di Bologna</li>
                         <li>Prezzo concorrenziale</li>
                         <li>Attestato di partecipazione</li>
                     </ul>
@@ -211,7 +231,7 @@ window.addEvent('domready', function() {
                     <div class='title ico_expert ico_expert2'>    
                         <div class='trequarti destra'>
                             <h3 style='text-align:left'><span class='grassetto'>Sviluppo con AngularJS</span></h3>
-                            <h3 style='text-align:left'>8 ore - mercoledì 28 maggio 2014</h3>
+                            <h3 style='text-align:left'>8 ore - mercoledì 25 giugno 2014</h3>
                         </div>
                     </div>
                     <div class='lineare'>
@@ -219,7 +239,7 @@ window.addEvent('domready', function() {
                     <p><strong>A chi è rivolto</strong>: sviluppatori (sia frontend che backend)</p>
                     <p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di JavaScript, utilizzo di Git</p>
                     <p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, materiale didattico, connettività Wi-Fi, gadget e attestato di partecipazione</p>
-                    <p><strong>Costo</strong>: 129,00 &euro; iva inclusa, ma soli 89,00 &euro; prenotando in anticipo</p>
+                    <p><strong>Costo</strong>: 159,00 &euro; iva inclusa, ma soli 89,00 &euro; prenotando in anticipo!</p>
                     <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
                     </div>
                 </div>
@@ -239,8 +259,8 @@ window.addEvent('domready', function() {
                                 <p>Presentazione del framework e primi passi</p>
                                 <h3>Progettazione con AngularJS</h3> 
                                 <p>Con laboratorio pratico per la creazione della nostra applicazione e gestione delle dipendenze (Bower)</p>
-                                <h3>Scope e controller</h3> 
-                                <p>Coding sull'app con utilizzo di $scope e scrittura del nostro primo controller</p>
+                                <h3>Scope, controller e filtri</h3> 
+                                <p>Coding sull'app con utilizzo di $scope e scrittura del nostro primo controller. Gestione dei template e utilizzo dei filtri.</p>
                             </div>
                         </div>
                        
@@ -253,12 +273,12 @@ window.addEvent('domready', function() {
                         <div class='program'>
                             <div class='quinto'>14:00</div>
                             <div class='trequarti'>
-                                <h3>Direttive, filtri e routing</h3> 
-                                <p>Creazione e utilizzo di componenti avanzate (Directive, Filter, strategie di routing avanzate)</p>
+                                <h3>Direttive, service e routing</h3> 
+                                <p>Creazione e utilizzo di componenti avanzate (Directive, Service, strategie di routing dell'app)</p>
                                 <h3>RESTful integration</h3> 
                                 <p>Come interagine con risorse rest con $http e integrazione backend</p>
-                                <h3>Deploy e test app</h3> 
-                                <p>Strategie di deploy e testing dell'applicazione</p>
+                                <h3>Deploy dell'app</h3> 
+                                <p>Completamento della nostra applicaione ed gestione del deploy con Grunt</p>
                             </div>
                         </div>
                         <div class='program  program2'>
@@ -284,7 +304,7 @@ window.addEvent('domready', function() {
         <div id='block3' class='block'> 
             <a name='biglietti' class='ancor'></a> 
             <div class='lineare_no testo_cen' >
-                <h3>I posti sono limitati! Solo pochi biglietti scontati "prenota prima"</h3>
+                <h3>I posti sono limitati! Solo pochi biglietti scontati "super early bird"</h3>
                 
                     
                 <div class='lineare_25 buy'>
@@ -293,7 +313,7 @@ window.addEvent('domready', function() {
                         <div class='title ico_expert_min ico_expert2_min'>    
                             <div class='quattroquinti destra'>
                                 <h3><span class='grassetto'>Workshop AngularJS</span></h3>
-                                <h3 style='font-size:15px;'>prezzo intero 129,00 &euro; iva inc.</h3>
+                                <h3 style='font-size:15px;'>prezzo intero 159,00 &euro; iva inc.</h3>
                                 <h3>prenotando ora solo 89,00 &euro; iva inc.</h3>
                             </div>
                         </div>
@@ -303,7 +323,7 @@ window.addEvent('domready', function() {
                         <div class='title'>    
                                 <h3>Il corso include</h3>
                                 <h3 style='font-size:15px;'>
-                                    coffee break, accesso wi-fi, materiale informativo (cartaceo + Git), attestato di partecipazione, sconto su corso avanzato 
+                                    coffee break, accesso wi-fi, materiale formativo (cartaceo, pdf e Git), attestato di partecipazione, sconto su corso avanzato 
                                 </h3>
                         </div>
                     </div>
@@ -311,19 +331,52 @@ window.addEvent('domready', function() {
                 </div>
                 
                 <div class='lineare' >
-                <div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.it/tickets-external?eid=11356368203&ref=etckt" frameborder="0" height="320" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Vendi i biglietti</a> <span style="color:#ddd;">attraverso</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
-                <div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
+                <div style="width:100%; text-align:left;" ><iframe  src="https://www.eventbrite.it/tickets-external?eid=11801435411&ref=etckt" frameborder="0" height="376" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Gestione evento</a><span style="color:#ddd;"> per </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.it/e/biglietti-workshop-angularjs-bologna-11801435411?ref=etckt">Workshop AngularJS - Bologna</a> <span style="color:#ddd;">con tecnologia</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
+                <div class='lineare testo_cen'>All'acquisto del biglietto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
             </div>
         </div>
         
         
+    <div id='block4' class='block'>
+      <a name='location' class='ancor'></a>
+      <div class='title'>
+        <h3><span class='grassetto'>La Location</span></h3>
+      </div>
+         <p class="testo_cen">Il workshop si svolgerà nelle sale attrezzate del T3LAB di Bologna, in via Sario Bassanelli 16, a pochi minuti dalla stazione di Bologna Centrale.</p>
+         <p class="testo_cen"><strong><a href='http://www.t3lab.it/' target='_blank'>T3LAB Bologna</a></strong><br/>via Sario Bassanelli 16</p>
+      <div class='lineare_20' id='map_canvas_over'>
+        <div class='lineare_no' id='map_canvas'></div>
+      </div>
+      <div class='lineare_20'>
+        <div class='quarto'>
+          <p><strong>In Auto</strong></p>
+          <p>Prendere l'uscita n. 6 della tangenziale e proseguire verso il centro città. Dopo aver superato il sottopasso ferroviario svoltare subito a sinistra in via Bassanelli. Il laboratorio si trova a piano terra della Fondazione Aldini (è possibile parcheggiare gratuitamente all'interno del parcheggio della Fondazione).</p>
+        </div>
+        <div class='quarto' style='margin-left:8%;'>
+          <p><strong>In Autobus</strong></p>
+           <p>
+            Dalla Stazione centrale camminare per 50 metri verso la pensilina dei bus urbani dell'autostazione dei bus (via Indipendenza) e prendere una qualsiasi linea del 27 (A, B o C è indifferente) direzione Corticella e scendere alla fermata "Istituto Aldini", ovvero dopo 6 fermate. La linea 27 ha una frequenza di 5-7 minuti.
+                </p>
+        </div>
+        <div class='quarto' style='margin-left:8%;'>
+          <p><strong>In Treno</strong></p>
+           <p>
+            La stazione di Bologna Centrale è comodamente raggiungibile sulla rete ad alta velocità grazie ai molteplici collegamenti con le stazioni di Milano, Firenze, Roma, Torino, Napoli, Venezia (<a href="http://www.trenitalia.it" target="_blank">Trenitalia</a>, <a href="http://www.italo.it" target="_blank">Italo</a>).
+           </p>
+        </div>
+      </div>
+    </div>
+        
+        
+        
+        <!-- 
         <div id='block4' class='block'> 
             <a name='location' class='ancor'></a> 
             <div class='title'>    
                 <h3><span class='grassetto'>La Location</span></h3>
             </div>
              <p class="testo_cen">I Corsi si tengono nella sede della <strong>Adiuva Formazione</strong>, in spazi dedicati a corsi formativi, in prossimità della metro e stazione ferroviaria di <i>Cadorna</i>, in una posizione strategica e facilmente raggiungibile.</p>
-            <p class="testo_cen"><strong><a href='http://www.adiuvaformazione.it/' target='_blank'>ADIUVA Formazione</a></strong><br/>Piazzale Cadorna, 10 - 20123 Milano </p>
+            <p class="testo_cen"><strong><a href='http://www.adiuvaformazione.it/' target='_blank'>ADIUVA Formazione</a></strong><br/>Piazzale Cadorna, 10 - 20123 Bologna </p>
          <div class='lineare_20' id='map_canvas_over'>
                 <div class='lineare_no' id='map_canvas'></div>
             </div>
@@ -335,18 +388,18 @@ window.addEvent('domready', function() {
                 </div>
                 <div class='quinto' style='margin-left:8%;'>
                     <p><strong>In Treno</strong></p>
-                     <p>La sede dei corsi è a pochi metri dalla stazione FS Cadorna. Per chi arriva con l'<strong>alta velocità</strong> (<a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a>) scendere a Milano Centrale o Porta Garibaldi e prendere la metropolitana linea 2 (verde) in direzione Assago fino alla stazione Cadorna.</p>
+                     <p>La sede dei corsi è a pochi metri dalla stazione FS Cadorna. Per chi arriva con l'<strong>alta velocità</strong> (<a href='http://www.trenitalia.com/' target='_blank'>Trenitalia</a> e <a href='http://www.italotreno.it' target='_blank'>ItaloTreno</a>) scendere a Bologna Centrale o Porta Garibaldi e prendere la metropolitana linea 2 (verde) in direzione Assago fino alla stazione Cadorna.</p>
                    </div>
                 <div class='quinto' style='margin-left:8%;'>
                     <p><strong>In Aereo</strong></p>
                      <p>
-                        Dagli aeroporti di <strong>Malpensa, Linate e Bergamo</strong> raggiungere con i collegamenti bus Milano Centrale e prendere la metropolitana linea 2 (verde) direzione Assago fino a fermata Cadorna.
+                        Dagli aeroporti di <strong>Malpensa, Linate e Bergamo</strong> raggiungere con i collegamenti bus Bologna Centrale e prendere la metropolitana linea 2 (verde) direzione Assago fino a fermata Cadorna.
                     </p>
                 </div>
                 <div class='quinto destra' >
                     <p><strong>Pernottamento</strong></p>
                     <p>
-                        Sono disponibili diverse soluzioni in loco adatte ad ogni budget: <a href="http://www.booking.com/searchresults.html?src=searchresults&city=-121726&ssne=Milano&ssne_untouched=Milano&ssne=Milano&ssne_untouched=Milano&error_url=http%3A%2F%2Fwww.booking.com%2Fsearchresults.it.html%3Fsid%3Dea760735477162455ee4eb973dd387e2%3Bdcid%3D1%3Bac_position%3D0%3Bac_suggestion_list_length%3D5%3Bcheckin_monthday%3D27%3Bcheckin_year_month%3D2014-4%3Bcheckout_monthday%3D28%3Bcheckout_year_month%3D2014-4%3Bclass_interval%3D1%3Bcsflt%3D%257B%257D%3Bdest_id%3D-121726%3Bdest_type%3Dcity%3Bdtdisc%3D0%3Bhyb_red%3D0%3Binac%3D0%3Bnha_red%3D0%3Bno_rooms%3D1%3Boffset%3D0%3Bproperty_room_info%3D1%3Bredirected_from_city%3D0%3Bredirected_from_landmark%3D0%3Bredirected_from_region%3D0%3Breview_score_group%3Dempty%3Bscore_min%3D0%3Bsi%3Dai%252Cco%252Cci%252Cre%252Cdi%3Bsrc%3Dindex%3Bss%3DMilano%252C%2520Lombardia%252C%2520Italia%3Bss_all%3D0%3Bss_raw%3DMilano%3Bssb%3Dempty%3Bor_radius%3D0%3B&dcid=1&sid=ea760735477162455ee4eb973dd387e2&si=ai%2Cco%2Cci%2Cre%2Cdi&ss=Milano&radius=&checkin_monthday=27&checkin_year_month=2014-5&checkout_monthday=28&checkout_year_month=2014-5&interval_of_time=any&flex_checkin_year_month=any&sb_predefined_group_options_value=1&no_rooms=1&group_adults=1&group_children=0&dest_type=city&dest_id=-121726" target="_blank">Alberghi in zona</a>
+                        Sono disponibili diverse soluzioni in loco adatte ad ogni budget: <a href="http://www.booking.com/searchresults.html?src=searchresults&city=-121726&ssne=Bologna&ssne_untouched=Bologna&ssne=Bologna&ssne_untouched=Bologna&error_url=http%3A%2F%2Fwww.booking.com%2Fsearchresults.it.html%3Fsid%3Dea760735477162455ee4eb973dd387e2%3Bdcid%3D1%3Bac_position%3D0%3Bac_suggestion_list_length%3D5%3Bcheckin_monthday%3D27%3Bcheckin_year_month%3D2014-4%3Bcheckout_monthday%3D28%3Bcheckout_year_month%3D2014-4%3Bclass_interval%3D1%3Bcsflt%3D%257B%257D%3Bdest_id%3D-121726%3Bdest_type%3Dcity%3Bdtdisc%3D0%3Bhyb_red%3D0%3Binac%3D0%3Bnha_red%3D0%3Bno_rooms%3D1%3Boffset%3D0%3Bproperty_room_info%3D1%3Bredirected_from_city%3D0%3Bredirected_from_landmark%3D0%3Bredirected_from_region%3D0%3Breview_score_group%3Dempty%3Bscore_min%3D0%3Bsi%3Dai%252Cco%252Cci%252Cre%252Cdi%3Bsrc%3Dindex%3Bss%3DBologna%252C%2520Lombardia%252C%2520Italia%3Bss_all%3D0%3Bss_raw%3DBologna%3Bssb%3Dempty%3Bor_radius%3D0%3B&dcid=1&sid=ea760735477162455ee4eb973dd387e2&si=ai%2Cco%2Cci%2Cre%2Cdi&ss=Bologna&radius=&checkin_monthday=27&checkin_year_month=2014-5&checkout_monthday=28&checkout_year_month=2014-5&interval_of_time=any&flex_checkin_year_month=any&sb_predefined_group_options_value=1&no_rooms=1&group_adults=1&group_children=0&dest_type=city&dest_id=-121726" target="_blank">Alberghi in zona</a>
                     </p>
                 </div>
             </div>
@@ -356,7 +409,7 @@ window.addEvent('domready', function() {
               <div class='box_3 box_last'><img src='http://adiuvaformazione.it/foto/prod_350-315_zom.JPG'  /></div>
              </div>
         </div>
-        
+        -->
         
         <div id='block5' class='block'> 
             <a name='chisiamo' class='ancor'></a> 
@@ -367,8 +420,8 @@ window.addEvent('domready', function() {
             
                 <div class='duequinti sinistra testo_sin'>
                     <p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
-                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Milano, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
-                    <p>Maggiori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
+                    <p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Bologna, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
+                    <p>Giugnori informazioni su <a href='http://www.corley.it' target='_blank'>Corley.it</a> e <a href='http://www.cloudconf.it' target='_blank'>CloudConf.it</a>
                     <p><img src='sponsor_corley.png' border='' /></p>
                     <div class='lineare'>
                         <p><strong>Il docente</strong></p>
@@ -394,7 +447,7 @@ window.addEvent('domready', function() {
 </div>
     
     <div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
-    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 28 Maggio 2014, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
+    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 25 Giugno 2014, Bologna - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 <script type="text/javascript">
