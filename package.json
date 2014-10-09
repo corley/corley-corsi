@@ -1,0 +1,14 @@
+{
+  "name": "corley-corsi",
+  "version": "0.0.0",
+  "description": "Static website corsi.corley.it",
+  "main": "index.html",
+  "author": "Corley",
+  "homepage": "http://corsi.corley.it",
+  "devDependencies": {
+    "grunt": "0.4.*",
+    "grunt-aws": "0.3.*",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-clean": "^0.6.0"
+  }
+}
