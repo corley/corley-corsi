@@ -1,3 +1,4 @@
 node_modules
 configuration.json
 build
+*Thumbs.db
