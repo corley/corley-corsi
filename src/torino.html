@@ -16,11 +16,11 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-                                                      
+
 
 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css' />
 
-     
+
 <script type="text/javascript" src="mootools-1.4.1-core.js"></script>
 <script type="text/javascript" src="mootools-1.4.0.1-more.js"></script>
 <script type="text/javascript" src="simple-modal.js"></script>
@@ -43,7 +43,7 @@
 		          scrollwheel: false
 		        }
 		        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-	
+
 		        var hotel = new google.maps.Marker({
 		            position: new google.maps.LatLng(45.048959, 7.668564),
 		            map: map,
@@ -53,25 +53,25 @@
 	      }
     </script>
 
-<script type='text/javascript'>  
-window.addEvent('domready', function() {  
-	
+<script type='text/javascript'>
+window.addEvent('domready', function() {
+
 	$$('.program2').fade(0.6);
-	
+
 	initialize_map();
 
 	var modal = {
 		title: "",
 		contents: "",
 		go: false
-		
-			
+
+
 	}
 	var location = window.location.search.split("&");
 	if(location[0]) location = location[0];
 	else location = "";
 	switch (location) {
-	
+
 		case "?php" :
 			modal.title = "Sei uno sviluppatore PHP?";
 			modal.contents = "Il Corso di Cloud Computing ti aiuterà a creare applicativi PHP scalabili, essendo focalizato sulla gestione di <strong>Apache e MySQL</strong>.<br/><br/>Ti aiuterà a incrementare il tuo bagaglio tecnico permettendoti di progettare e sviluppare <strong>siti e applicativi in Cloud con il PHP</strong>. Non perdere l'occasione!";
@@ -83,13 +83,13 @@ window.addEvent('domready', function() {
 			modal.go = false;
 		break;
 	}
-	
+
 	if(modal.go) {
-		SM = new SimpleModal({width:600, btn_ok: "Ottima notizia! (chiudi la finestra)"});             
+		SM = new SimpleModal({width:600, btn_ok: "Ottima notizia! (chiudi la finestra)"});
     	SM.show(modal);
 	}
-		
-	  
+
+
 	var links = $$('.link');
 	links.each(function(link, ii) {
 		link.addEvent('click', function(evento) {
@@ -98,27 +98,34 @@ window.addEvent('domready', function() {
 			new Fx.Scroll(window).toElement('block'+iii);
 		});
 	});
-	
+
 	$('gotop').addEvent('click', function() {
 		new Fx.Scroll(window).toTop();
 	});
-	
-	
-		
+
+
+
 	var update_pos = function(fxc, el){
 		var scroll = window.getScroll();
 		fxc.start({
 			'top': [el.getStyle('top'), scroll.y+250]
 		});
 	}
-		
+
 
 });
 </script>
 
-		
+
 </head>
-<body> 
+<body>
+  <script src="cookiechoices.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    cookieChoices.showCookieConsentBar("Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Continuando nella navigazione acconsenti all'utilizzo dei cookie.",
+      'Ok', 'Leggi di più', '/privacy.html');
+  });
+  </script>
 <div class='lineare_no' id='liv0'>
     <div id='fixed' class='lineare_no'>
     	<a href='#conferenza' class='link' >Il Corso</a>
@@ -129,18 +136,18 @@ window.addEvent('domready', function() {
     	<!-- <a href='https://twitter.com/_CloudConf_' target='_blank'><img src='twitter.png' border='0' /></a>
     	<a href='https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313' target='_blank'><img src='facebook.png' border='0' /></a>-->
     </div>
-	
-	
+
+
 	<div class='inside' id='liv1'>
 		<div class='lineare_no' id='header'>
 			<h2>2-3 Maggio 2013, a Torino</h2>
 			<h1>Cloud Computing per Applicazioni Web</h1>
 			<h3>Corso di Formazione Professionale su Scalabilità e Cloud Development.</h3>
 		</div>
-		
-		
-		<div id='block1' class='block'> 
-			<a name='conferenza' class='ancor'></a>    
+
+
+		<div id='block1' class='block'>
+			<a name='conferenza' class='ancor'></a>
 			<div class='lineare_no'>
 				<div class='box_3'>
 					<div class='title'>
@@ -191,14 +198,14 @@ window.addEvent('domready', function() {
 				<p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso sul Cloud Computing!</p>
 			</div>
 		</div>
-		
-		<div id='block2' class='block'> 
-			<a name='programma' class='ancor'></a> 
-			
+
+		<div id='block2' class='block'>
+			<a name='programma' class='ancor'></a>
+
 			<div class='lineare_25'>
-			
+
 				<div class='meta'>
-					<div class='title ico_expert'>    
+					<div class='title ico_expert'>
 						<div class='trequarti destra'>
 							<h3 style='text-align:left'><span class='grassetto'>Modulo 1: Corso di Cloud Computing</span></h3>
 							<h3 style='text-align:left'>8 ore - giovedì 2 maggio 2013</h3>
@@ -213,7 +220,7 @@ window.addEvent('domready', function() {
 					<p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
 					</div>
 				</div>
-				
+
 				<div class='meta destra'>
 					<div class='programs lineare_no'>
 						<div class='program  program2'>
@@ -225,7 +232,7 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>09:30</div>
 							<div class='trequarti'>
-								<h3>Comprendere ed usare i prodotti Amazon Web Services</h3> 
+								<h3>Comprendere ed usare i prodotti Amazon Web Services</h3>
 								<p>+ laboratorio sulla gestione dei servizi e utilizzo console di AWS</p>
 							</div>
 						</div>
@@ -238,17 +245,17 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>10:45</div>
 							<div class='trequarti'>
-								<h3>Teoria della scalabilità e S.O.A (Service Oriented Architecture)</h3> 
+								<h3>Teoria della scalabilità e S.O.A (Service Oriented Architecture)</h3>
 								<p>+ laboratorio sulla progettazione di applicativi scalabili</p>
 							</div>
 						</div>
 						<div class='program'>
 							<div class='quinto'>11:45</div>
 							<div class='trequarti'>
-								<h3>Gestione dei file statici (html, js, css, img...) con S3 e CDN</h3> 
+								<h3>Gestione dei file statici (html, js, css, img...) con S3 e CDN</h3>
 								<p>+ laboratorio sulla integrazione di S3 e CloudFront con siti web</p>
 							</div>
-						</div>						
+						</div>
 						<div class='program  program2'>
 							<div class='quinto'>13:00</div>
 							<div class='trequarti'>
@@ -258,7 +265,7 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>14:00</div>
 							<div class='trequarti'>
-								<h3>Macchine virtuali, scalabilità e LoadBalancer</h3> 
+								<h3>Macchine virtuali, scalabilità e LoadBalancer</h3>
 								<p>+ laboratorio sull'utilizzo delle istanze virtuali di Amazon e scalabilità</p>
 							</div>
 						</div>
@@ -271,14 +278,14 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>15:45</div>
 							<div class='trequarti'>
-								<h3>RDS e servizi per la scalabilità dei database SQL</h3> 
+								<h3>RDS e servizi per la scalabilità dei database SQL</h3>
 								<p>+ laboratorio sull'utilizzo di RDS e MySQL</p>
 							</div>
 						</div>
 						<div class='program'>
 							<div class='quinto'>17:00</div>
 							<div class='trequarti'>
-								<h3>Servizi complementari di AWS per la scalabilità</h3> 
+								<h3>Servizi complementari di AWS per la scalabilità</h3>
 								<p>+ laboratorio sull'utilizzo di Elasticache, SQS, CloudWatch</p>
 							</div>
 						</div>
@@ -288,14 +295,14 @@ window.addEvent('domready', function() {
 								<h3>Chiusura corso</h3>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
-				
+
 			<div class='lineare_75'>
-			
+
 				<div class='meta'>
-					<div class='title ico_expert ico_expert2'>    
+					<div class='title ico_expert ico_expert2'>
 						<div class='trequarti destra'>
 							<h3 style='text-align:left'><span class='grassetto' style='letter-spacing:-1px'>Modulo 2: Corso di Scalabilità avanzata</span></h3>
 							<h3 style='text-align:left'>8 ore - venerdì 3 maggio 2013</h3>
@@ -310,7 +317,7 @@ window.addEvent('domready', function() {
 					<p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
 					</div>
 				</div>
-				
+
 				<div class='meta destra'>
 					<div class='programs lineare_no'>
 						<div class='program  program2'>
@@ -322,7 +329,7 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>09:30</div>
 							<div class='trequarti'>
-								<h3>Teoria di scalabilità avanzata</h3> 
+								<h3>Teoria di scalabilità avanzata</h3>
 								<p>+ laboratorio sulla progettazione di applicativi in alta disponibilità</p>
 							</div>
 						</div>
@@ -335,17 +342,17 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>10:45</div>
 							<div class='trequarti'>
-								<h3>Scalabilità dei database e configurazione Read-Replica</h3> 
+								<h3>Scalabilità dei database e configurazione Read-Replica</h3>
 								<p>+ laboratorio scalabilità e alta disponibilità di MySQL con RDS</p>
 							</div>
 						</div>
 						<div class='program'>
 							<div class='quinto'>12:00</div>
 							<div class='trequarti'>
-								<h3>Gestione di Cache e Sessioni in Cloud</h3> 
+								<h3>Gestione di Cache e Sessioni in Cloud</h3>
 								<p>+ laboratorio sui cluster Elasticache (Memcached)</p>
 							</div>
-						</div>						
+						</div>
 						<div class='program  program2'>
 							<div class='quinto'>13:00</div>
 							<div class='trequarti'>
@@ -355,7 +362,7 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>14:00</div>
 							<div class='trequarti'>
-								<h3>Istanze virtuali e AMI personalizzate</h3> 
+								<h3>Istanze virtuali e AMI personalizzate</h3>
 								<p>+ laboratorio sulla gestione delle proprie Immagini Macchina personalizzate</p>
 							</div>
 						</div>
@@ -368,14 +375,14 @@ window.addEvent('domready', function() {
 						<div class='program'>
 							<div class='quinto'>15:45</div>
 							<div class='trequarti'>
-								<h3>Autoscaling avanzato</h3> 
+								<h3>Autoscaling avanzato</h3>
 								<p>+ laboratorio sulle metodologia di scalata avanzata</p>
 							</div>
 						</div>
 						<div class='program'>
 							<div class='quinto'>17:00</div>
 							<div class='trequarti'>
-								<h3>Deploy di applicativi sulla nuvola</h3> 
+								<h3>Deploy di applicativi sulla nuvola</h3>
 								<p>+ laboratorio sulle metodologie di deploy e gestione dell'applicativo su AWS</p>
 							</div>
 						</div>
@@ -385,30 +392,30 @@ window.addEvent('domready', function() {
 								<h3>Chiusura corso</h3>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 		</div>
-		
-		
-		<div  class='block'> 
+
+
+		<div  class='block'>
 			<h3><span class='grassetto'></span></h3>
 			<div class='lineare testo_cen'><img src='clouds.png' alt='' /></div>
 			<div class='lineare testo_cen'><p class='testo_cen testo17'>Il nostro Corso è un percorso formativo completo e professionale, studiato per formare i partecipanti attraverso sessioni approfondite e laboratori pratici. </p><p class='testo17'>Rappresenta un'occasione imperdibile per sviluppatori e aziende che desiderano aggiornare il proprio bagaglio di competenze e ottenere nuovi sbocchi lavorativi.</p></div>
 		</div>
-		
-		
-			
-		<div id='block3' class='block'> 
-			<a name='biglietti' class='ancor'></a> 
+
+
+
+		<div id='block3' class='block'>
+			<a name='biglietti' class='ancor'></a>
 			<div class='lineare_no testo_cen' >
 				<h3>I posti sono limitati! Solo entro il 24 aprile puoi accedere al biglietto scontato del 30%!</h3>
-				
-					
+
+
 				<div class='lineare_25 buy'>
-				
+
 					<div class='terzo'>
-						<div class='title ico_expert_min'>    
+						<div class='title ico_expert_min'>
 							<div class='trequarti destra'>
 								<h3><span class='grassetto'>1: Corso di Cloud Computing</span></h3>
 								<h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
@@ -416,9 +423,9 @@ window.addEvent('domready', function() {
 							</div>
 						</div>
 					</div>
-					
+
 					<div class='terzo margin_left_5'>
-						<div class='title ico_expert_min ico_expert2_min'>    
+						<div class='title ico_expert_min ico_expert2_min'>
 							<div class='trequarti destra'>
 								<h3><span class='grassetto'>2: Corso di Scalabilità Avanzata</span></h3>
 								<h3 style='font-size:15px;'>prezzo intero 299,00 &euro; i.e.</h3>
@@ -426,9 +433,9 @@ window.addEvent('domready', function() {
 							</div>
 						</div>
 					</div>
-					
+
 					<div class='terzo margin_left_5'>
-						<div class='title ico_expert_min ico_expert3_min'>    
+						<div class='title ico_expert_min ico_expert3_min'>
 							<div class='trequarti destra'>
 								<h3><span class='grassetto'>Corso 1 + Corso 2</span></h3>
 								<h3 style='font-size:15px;'>prezzo intero 499,00 &euro; i.e.</h3>
@@ -437,17 +444,17 @@ window.addEvent('domready', function() {
 						</div>
 					</div>
 				</div>
-				
+
 				<div class='lineare' >
 				<div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.it/tickets-external?eid=5695892568&ref=etckt&v=2" frameborder="0" height="444" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Vendi i biglietti</a> <span style="color:#ddd;">attraverso</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.it?ref=etckt">Eventbrite</a></div></div>
 				<div class='lineare testo_cen'>All'acquisto del biglieto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
 			</div>
 		</div>
-		
-		
-		<div id='block4' class='block'> 
-			<a name='location' class='ancor'></a> 
-			<div class='title'>    
+
+
+		<div id='block4' class='block'>
+			<a name='location' class='ancor'></a>
+			<div class='title'>
 				<h3><span class='grassetto'>La Location</span></h3>
 			</div>
 		     <p class="testo_cen">I Corsi si tengono nella sede del <a href='http://www.toolboxoffice.it' target='_blank'>ToolBox Torino</a>, in prossimità della fermata della metro <i>Dante</i>, facilmente raggiungibile dalle stazioni ferroviarie di Torino Porta Susa, Porta Nuova e Lingotto.</p>
@@ -485,15 +492,15 @@ window.addEvent('domready', function() {
 				<div class='box_3 box_last'><img src='http://www.toolboxoffice.it/img-gal/gal28.jpg'  /></div>
 			</div>
 		</div>
-		
-		
-		<div id='block5' class='block'> 
-			<a name='chisiamo' class='ancor'></a> 
-			<div class='title'>    
+
+
+		<div id='block5' class='block'>
+			<a name='chisiamo' class='ancor'></a>
+			<div class='title'>
 				<h3><span class='grassetto'>Chi Siamo</span></h3>
 			</div>
 			<div class='lineare_no testo_cen' >
-			
+
 				<div class='duequinti sinistra testo_sin'>
 					<p>Corley srl.è specializzata in servizi Cloud based e progettazione di applicativi scalabili per ogni esigenza, riuscendo a sfruttare al meglio le possibilità offerte dal <strong>Cloud Computing</strong> in ogni ambiente di lavoro.</p>
 					<p>Corley è inoltre ideatrice e promotrice della <strong>Cloud Conference</strong> del 18 Aprile 2013 a Torino, primo grande evento italiano interamente dedicato alla scalabilità e cloud development.</p>
@@ -509,7 +516,7 @@ window.addEvent('domready', function() {
 					<img src='/cards.jpg' border='' />
 					</div>
 				</div>
-					
+
 				<div class='duequinti destra testo_sin'>
 					<div class='lineare_no'><p>Per ogni richiesta compila il modulo sottostante o chiamaci al <b>011 4365278</b>!</p></div>
 					<div class='lineare'>
@@ -519,10 +526,10 @@ window.addEvent('domready', function() {
 			</div>
 		</div>
 
-		
-		
+
+
 </div>
-	
+
 	<div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
 	<div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 2-3 Maggio 2013, Torino - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
@@ -540,13 +547,13 @@ window.addEvent('domready', function() {
   })();
 
 </script>
-		
+
 </div>
 </div>
 </div>
 
 
 
-		
+
 </body>
 </html>

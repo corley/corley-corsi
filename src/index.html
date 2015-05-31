@@ -149,6 +149,13 @@ window.addEvent('domready', function() {
 
 </head>
 <body>
+  <script src="cookiechoices.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    cookieChoices.showCookieConsentBar("Questo sito o gli strumenti terzi da questo utilizzati si avvalgono di cookie necessari al funzionamento ed utili alle finalità illustrate nella cookie policy. Continuando nella navigazione acconsenti all'utilizzo dei cookie.",
+      'Ok', 'Leggi di più', '/privacy.html');
+  });
+  </script>
 <div class='lineare_no' id='liv0'>
     <div id='fixed' class='lineare_no'>
         <a href='#conferenza' class='link' >Il Corso</a>
