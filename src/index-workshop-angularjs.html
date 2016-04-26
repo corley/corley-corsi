@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="description" content="Workshop Docker, a Milano il 24 Maggio 2016" />
+<meta name="description" content="Workshop AngularJS, a Milano il 23 Giugno 2015" />
 <meta name="keyword" content="" />
 <meta name="Copyright" content="Corley" />
 <meta name="Language" content="Italian" />
@@ -11,7 +12,7 @@
 <meta name="publisher" content="" />
 <meta name="ICBM" content="44.522274, 11.346878" />
 <meta name="geo.position" content="44.522274, 11.346878" />
-<title>Workshop Docker a Milano</title>
+<title>Workshop AngularJS a Milano</title>
 
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -28,11 +29,11 @@
 
 <style type="text/css">
 #liv0,#fixed {
-    background-image:url("pixels_blue.jpg");
+    background-image:url("pixels_red.jpg");
 }
 #map_canvas_over, .box_3 img {
-    background-color:#008bb8;
-    border-color:#039BC6;
+    background-color:#731613;
+    border-color:#731613;
 }
 </style>
 
@@ -107,10 +108,10 @@ window.addEvent('domready', function() {
             modal.go = true;
         break;
         default:
-            modal.title = "Early Bird";
-            //modal.title = "Ultimi 2 biglietti";
-            modal.contents = "Il Workshop Docker sta ritornando a Milano, e per l'occasione abbiamo deciso di promuovere il corso!<br/>Prenotando in anticipo puoi usfruire di un grande sconto: pochi biglietti a 89,90 iva inclusa invece di 159,00!";
-            //modal.contents = "Il corso è quasi completo, ma sono disponibili ancora due biglietti!";
+            // modal.title = "Early Bird";
+            modal.title = "Ultimi 2 biglietti";
+            // modal.contents = "Il Workshop AngularJS sta ritornando a Milano, e per l'occasione abbiamo deciso di promuovere il corso!<br/>Prenotando in anticipo puoi usfruire di un grande sconto: pochi biglietti a 89,90 iva inclusa invece di 159,00!";
+            modal.contents = "Il corso è quasi completo, ma sono disponibili ancora due biglietti!";
             modal.go = true;
         break;
     }
@@ -171,9 +172,9 @@ window.addEvent('domready', function() {
 
     <div class='inside' id='liv1'>
         <div class='lineare_no' id='header'>
-            <h2>24 Maggio 2016, a Milano</h2>
-            <h1>Workshop Docker</h1>
-            <h3>Corso di Formazione Professionale per Sviluppatori/Sistemisti/DevOps</h3>
+            <h2>23 Giugno 2015, a Milano</h2>
+            <h1>Workshop Avanzato AngularJS</h1>
+            <h3>Corso di Formazione Professionale per Sviluppatori</h3>
         </div>
 
 
@@ -185,7 +186,7 @@ window.addEvent('domready', function() {
                         <h3 class='testo_sin'><span class='grassetto'>Il workshop</span></h3>
                     </div>
                     <div class='lineare_no' >
-                        <p>Corso intensivo di 1 giornata sulle tecniche di sviluppo/deploy con Docker</p>
+                        <p>Corso intensivo di 1 giornata sulle tecniche avanzate di sviluppo con AngularJS</p>
                         <p>Il corso, ricco di <strong>laboratori pratici</strong> e nato ad un attento studio del programma, è dedicato agli sviluppatori.</p>
                     </div>
                 </div>
@@ -226,7 +227,7 @@ window.addEvent('domready', function() {
                 </div>
             </div>
             <div class='lineare_no'>
-                <p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso su Docker!</p>
+                <p>Prenota il tuo <a href='#biglietti'>posto</a> e cogli l'occasione di seguire un innovativo corso su AngularJS!</p>
             </div>
         </div>
 
@@ -236,18 +237,18 @@ window.addEvent('domready', function() {
             <div class='lineare_25'>
 
                 <div class='meta'>
-                    <div class='title ico_expert'>
+                    <div class='title ico_expert ico_expert2'>
                         <div class='trequarti destra'>
-                            <h3 style='text-align:left'><span class='grassetto'>Corso Docker: Build, Ship, Run</span></h3>
-                            <h3 style='text-align:left'>8 ore - martedì 24 maggio 2016</h3>
+                            <h3 style='text-align:left'><span class='grassetto'>Corso avanzato AngularJS</span></h3>
+                            <h3 style='text-align:left'>8 ore - martedì 23 giugno 2015</h3>
                         </div>
                     </div>
                     <div class='lineare'>
-                    <p class='testo17'>Sessione dedicata al famoso tool di deploy in container isolati particolarmente indicato nello sviluppo e mantenimento di applicazioni in Cloud.</p>
-                    <p><strong>A chi è rivolto</strong>: sviluppatori/sistemisti</p>
-                    <p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di networking ed infrastrutture</p>
-                    <p><strong>Cosa comprende</strong>: corso di 1 giornata: materiale didattico, connettività Wi-Fi e attestato di partecipazione</p>
-                    <p><strong>Costo</strong>: 159,90 &euro; iva inclusa, ma soli 89,90 &euro; prenotando in anticipo!</p>
+                    <p class='testo17'>Sessione focalizzata sugli aspetti più delicati e profesisonali del framework: utilizzo avanzato delle direttive, strategie di deploy, creazione di servizi, sviluppo di applicazioni pronte per la produzione, performance.</p>
+                    <p><strong>A chi è rivolto</strong>: sviluppatori (sia frontend che backend)</p>
+                    <p><strong>Competenze richieste</strong>: fondamenti di programmazione e conoscenza di JavaScript, conoscenza base di AngularJS, utilizzo di Git</p>
+                    <p><strong>Cosa comprende</strong>: corso di 1 giornata, coffe break, materiale didattico, connettività Wi-Fi e attestato di partecipazione</p>
+                    <p><strong>Costo</strong>: 159,00 &euro; iva inclusa<!--, ma soli 89,00 &euro; prenotando in anticipo!--></p>
                     <p>Ai partecipanti sono richiesti puntualità, spirito di condivisione e un portatile per seguire i laboratori pratici.</p>
                     </div>
                 </div>
@@ -263,12 +264,12 @@ window.addEvent('domready', function() {
                         <div class='program'>
                             <div class='quinto'>09:30</div>
                             <div class='trequarti'>
-                                <h3>Docker per la produzione</h3>
-                                <p>Introduzione a Docker e alla gestione dei container.</p>
-                                <h3>Setup e configurazione</h3>
-                                <p>Predisposizione dei tool necessari per cominciare a lavorare con Docker (e Docker Machine per ambienti Win e Mac).</p>
-                                <h3>Ogni servizio un container</h3>
-                                <p>Utilizzare Docker Compose per costruire un ambiente di sviluppo multi container.</p>
+                                <h3>AngularJS per la produzione</h3>
+                                <p>Strategie per l'utilizzo del framework in ambienti di produzione.</p>
+                                <h3>Progettazione avanzata</h3>
+                                <p>Riutilizzo del codice, routing avanzato, scaffolding dell'app e gestione corretta delle dipendenze.</p>
+                                <h3>Identità, sessioni, acl</h3>
+                                <p>Integrazioni di servizi utili alla gestione delle utenze, degli accessi e delle sessioni</p>
                             </div>
                         </div>
 
@@ -281,10 +282,12 @@ window.addEvent('domready', function() {
                         <div class='program'>
                             <div class='quinto'>14:00</div>
                             <div class='trequarti'>
-								<h3>Autobuild dei container</h3>
-								<p>Collegare il codice di preparazione del tuo container al meccanismo di continuous delivery.</p>
-								<h3>Deploy con Amazon ECS</h3>
-								<p>Sfruttare il servizio di Elastic Container Service per il deploy della nostra applicazione.</p>
+                              <h3>Direttive, utilizzo avanzato</h3>
+                              <p>Analisi e utilizzo di tutte le proprietà e funionalità proprie delle direttive.</p>
+                                <h3>Servizi, utilizzo avanzato</h3>
+                                <p>Service, Provider e Factory per la creazione di servizi evoluti</p>
+                                <h3>Strategie avanzate di deploy</h3>
+                                <p>I migliori task di Grunt per uno sviluppo più veloce e deploy semplificato</p>
                             </div>
                         </div>
                         <div class='program  program2'>
@@ -305,7 +308,7 @@ window.addEvent('domready', function() {
 
         <div  class='block'>
             <h3><span class='grassetto'></span></h3>
-            <div class='lineare testo_cen'><img src='docker.png' alt='' /></div>
+            <div class='lineare testo_cen'><img src='angularjs-logo.png' alt='' /></div>
             <div class='lineare testo_cen'><p class='testo_cen testo17'>Il nostro Corso è un percorso formativo completo e professionale, studiato per formare i partecipanti attraverso sessioni approfondite e laboratori pratici. </p><p class='testo17'>Rappresenta un'occasione imperdibile per sviluppatori e aziende che desiderano aggiornare il proprio bagaglio di competenze e ottenere nuovi sbocchi lavorativi.</p></div>
         </div>
 
@@ -320,9 +323,9 @@ window.addEvent('domready', function() {
                 <div class='lineare_25 buy'>
 
                     <div class='meta'>
-                        <div class='title ico_expert_min'>
+                        <div class='title ico_expert_min ico_expert2_min'>
                             <div class='quattroquinti destra'>
-                                <h3><span class='grassetto'>Workshop Docker</span></h3>
+                                <h3><span class='grassetto'>Workshop AngularJS</span></h3>
                                 <h3 style='font-size:15px;'>prezzo intero 159,90 &euro; iva inc.</h3>
                                 <!--<h3>prenotando ora solo 89,90 &euro; iva inc.</h3>-->
                             </div>
@@ -333,7 +336,7 @@ window.addEvent('domready', function() {
                         <div class='title'>
                                 <h3>Il corso include</h3>
                                 <h3 style='font-size:15px;'>
-                                    coffee break, accesso wi-fi, materiale formativo (cartaceo, pdf e Git), attestato di partecipazione, sconto su corso
+                                    coffee break, accesso wi-fi, materiale formativo (cartaceo, pdf e Git), attestato di partecipazione, sconto su corso avanzato
                                 </h3>
                         </div>
                     </div>
@@ -341,7 +344,9 @@ window.addEvent('domready', function() {
                 </div>
 
                 <div class='lineare' >
-				<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.it/tickets-external?eid=24959170551&ref=etckt" frameborder="0" height="400" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="_blank" href="http://www.eventbrite.it/r/etckt">Con tecnologia Eventbrite</a></div></div>
+                <div style="width:100%; text-align:left;" >
+                  <iframe  src="//eventbrite.it/tickets-external?eid=17182280664&ref=etckt" frameborder="0" height="314" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                </div>
                 <div class='lineare testo_cen'>All'acquisto del biglietto viene corrisposta regolare fattura; è possibile saldare anche con <strong>bonifico bancario</strong> (telefonare al 392 3081714)</div>
             </div>
         </div>
@@ -429,15 +434,8 @@ window.addEvent('domready', function() {
                     <p><img src='sponsor_corley.png' border='' /></p>
                     <div class='lineare'>
                         <p><strong>Il docente</strong></p>
-                        <p><strong>Walter Dal Mut</strong>: si occupa di CloudComputing, di infrastrutture scalabili e sviluppo software.<br>
-                            <u>
-                                Ha due certificazioni Amazon Web Services come Solution Architect e SysOps Administrator
-                            </u>
-                            (<a href='http://www.walterdalmut.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/walterdalmut' target='_blank'>twitter</a>).
-                        </p>
+                        <p><strong>Gabriele Mittica</strong>: si occupa di sviluppo web da 10 anni e offre una grande esperienza nella realizzazione di applicativi gestionali, architetture scalabili e single app con AngularJS (<a href='http://www.gabrielemittica.com' target='_blank'>sito personale</a>, <a href='https://twitter.com/gabrielemittica' target='_blank'>linkedin</a>).</p>
                         <a href='http://www.corley.it/index/contatti.html' target='_blank' class='contattaci invisibile'>Contattaci per informazioni sul Corso</a>
-                        <img src="solutionarchitect.png"/>
-                        <img src="sysops.png"/>
                     </div>
                     <div class='lineare'>
                     <img src='/cards.jpg' border='' />
@@ -458,7 +456,7 @@ window.addEvent('domready', function() {
 </div>
 
     <div class='staytuned lineare_no' style='margin:0'>ti aspettiamo!</div>
-    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 24 Maggio 2016, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
+    <div class='footer'>&copy; Corley Corsi è un prodotto Corley srl- Partita Iva: 10669790015 - 23 Giugno 2015, Milano - <span id='gotop' class='puntatore'>torna in cima</span></div>
 </div>
 
 <script type="text/javascript">
